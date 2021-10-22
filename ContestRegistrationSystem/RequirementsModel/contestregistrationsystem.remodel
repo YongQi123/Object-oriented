@@ -1,0 +1,176 @@
+UseCaseModel ContestRegistrationSystem {
+
+	UC::modifyAthleteInformation definedBySSD(ModifyAthleteInformationSSD) relatedService(ModifyAthleteInformationService)
+	UC::viewCompetitionResults definedBySSD(ViewCompetitionResultsSSD) relatedService(ViewCompetitionResultsService)
+	UC::uploadCompetitionResults definedBySSD(UploadCompetitionResultsSSD) relatedService(UploadCompetitionResultsService)
+	UC::setRegistrationOpeningAndClosingTimes definedBySSD(SetRegistrationOpeningAndClosingTimesSSD) relatedService(SetRegistrationOpeningAndClosingTimesService)
+	UC::makeRegistration definedBySSD(MakeRegistrationSSD) relatedService(MakeRegistrationService)
+
+	Actor User {
+		viewCompetitionResults
+	}
+
+	Actor TournamentOrganizer {
+		uploadCompetitionResults
+	}
+
+	Actor Administrators {
+		setRegistrationOpeningAndClosingTimes
+		modifyAthleteInformation
+	}
+
+	Actor CollegeAdministrator {
+		makeRegistration
+		modifyAthleteInformation
+	}
+
+	Interaction MakeRegistrationSSD {
+
+		[Participants: CollegeAdministrator MakeRegistrationService]
+
+		CallMessage::MakeRegistrationSSDCallMessage1(makeRegistration MakeRegistrationSSDCallMessage1SendingEnd -> MakeRegistrationSSDExecution1StartEnd)
+		ReturnMessage::MakeRegistrationSSDCallMessage1Return(MakeRegistrationSSDExecution1FinishEnd -> MakeRegistrationSSDCallMessage1ReturnReceivingEnd MakeRegistrationSSDCallMessage1)
+
+		Execution::MakeRegistrationSSDExecution1(MakeRegistrationService MakeRegistrationSSDExecution1StartEnd MakeRegistrationSSDExecution1FinishEnd)
+
+		MessageEnd::MakeRegistrationSSDCallMessage1SendingEnd(CollegeAdministrator MakeRegistrationSSDCallMessage1)
+		ExecutionEnd::MakeRegistrationSSDExecution1StartEnd(MakeRegistrationService MakeRegistrationSSDExecution1)
+		ExecutionEnd::MakeRegistrationSSDExecution1FinishEnd(MakeRegistrationService MakeRegistrationSSDExecution1)
+		MessageEnd::MakeRegistrationSSDCallMessage1ReturnReceivingEnd(CollegeAdministrator MakeRegistrationSSDCallMessage1Return)
+
+	}
+
+	Interaction ViewCompetitionResultsSSD {
+
+		[Participants: User ViewCompetitionResultsService]
+
+		CallMessage::ViewCompetitionResultsSSDCallMessage1(viewCompetitionResults ViewCompetitionResultsSSDCallMessage1SendingEnd -> ViewCompetitionResultsSSDExecution1StartEnd)
+		ReturnMessage::ViewCompetitionResultsSSDCallMessage1Return(ViewCompetitionResultsSSDExecution1FinishEnd -> ViewCompetitionResultsSSDCallMessage1ReturnReceivingEnd ViewCompetitionResultsSSDCallMessage1)
+
+		Execution::ViewCompetitionResultsSSDExecution1(ViewCompetitionResultsService ViewCompetitionResultsSSDExecution1StartEnd ViewCompetitionResultsSSDExecution1FinishEnd)
+
+		MessageEnd::ViewCompetitionResultsSSDCallMessage1SendingEnd(User ViewCompetitionResultsSSDCallMessage1)
+		ExecutionEnd::ViewCompetitionResultsSSDExecution1StartEnd(ViewCompetitionResultsService ViewCompetitionResultsSSDExecution1)
+		ExecutionEnd::ViewCompetitionResultsSSDExecution1FinishEnd(ViewCompetitionResultsService ViewCompetitionResultsSSDExecution1)
+		MessageEnd::ViewCompetitionResultsSSDCallMessage1ReturnReceivingEnd(User ViewCompetitionResultsSSDCallMessage1Return)
+
+	}
+
+	Interaction UploadCompetitionResultsSSD {
+
+		[Participants: TournamentOrganizer UploadCompetitionResultsService]
+
+		CallMessage::UploadCompetitionResultsSSDCallMessage1(uploadCompetitionResults UploadCompetitionResultsSSDCallMessage1SendingEnd -> UploadCompetitionResultsSSDExecution1StartEnd)
+		ReturnMessage::UploadCompetitionResultsSSDCallMessage1Return(UploadCompetitionResultsSSDExecution1FinishEnd -> UploadCompetitionResultsSSDCallMessage1ReturnReceivingEnd UploadCompetitionResultsSSDCallMessage1)
+
+		Execution::UploadCompetitionResultsSSDExecution1(UploadCompetitionResultsService UploadCompetitionResultsSSDExecution1StartEnd UploadCompetitionResultsSSDExecution1FinishEnd)
+
+		MessageEnd::UploadCompetitionResultsSSDCallMessage1SendingEnd(TournamentOrganizer UploadCompetitionResultsSSDCallMessage1)
+		ExecutionEnd::UploadCompetitionResultsSSDExecution1StartEnd(UploadCompetitionResultsService UploadCompetitionResultsSSDExecution1)
+		ExecutionEnd::UploadCompetitionResultsSSDExecution1FinishEnd(UploadCompetitionResultsService UploadCompetitionResultsSSDExecution1)
+		MessageEnd::UploadCompetitionResultsSSDCallMessage1ReturnReceivingEnd(TournamentOrganizer UploadCompetitionResultsSSDCallMessage1Return)
+
+	}
+
+	Interaction SetRegistrationOpeningAndClosingTimesSSD {
+
+		[Participants: Administrators SetRegistrationOpeningAndClosingTimesService]
+
+		CallMessage::SetRegistrationOpeningAndClosingTimesSSDCallMessage1(setRegistrationOpeningAndClosingTimes SetRegistrationOpeningAndClosingTimesSSDCallMessage1SendingEnd -> SetRegistrationOpeningAndClosingTimesSSDExecution1StartEnd)
+		ReturnMessage::SetRegistrationOpeningAndClosingTimesSSDCallMessage1Return(SetRegistrationOpeningAndClosingTimesSSDExecution1FinishEnd -> SetRegistrationOpeningAndClosingTimesSSDCallMessage1ReturnReceivingEnd SetRegistrationOpeningAndClosingTimesSSDCallMessage1)
+
+		Execution::SetRegistrationOpeningAndClosingTimesSSDExecution1(SetRegistrationOpeningAndClosingTimesService SetRegistrationOpeningAndClosingTimesSSDExecution1StartEnd SetRegistrationOpeningAndClosingTimesSSDExecution1FinishEnd)
+
+		CombinedFragment:: combinedFragement1 -> loop {
+
+			[Participants: SetRegistrationOpeningAndClosingTimesService Administrators]
+
+			combinedFragement1StartEnd -> combinedFragement1FinishEnd
+
+			Operand::condition1(condition1End combinedFragement1FinishEnd)
+		}
+
+		CombinedFragmentEnd::combinedFragement1StartEnd(combinedFragement1)
+		OperandEnd::condition1End(condition1)
+		MessageEnd::SetRegistrationOpeningAndClosingTimesSSDCallMessage1SendingEnd(Administrators SetRegistrationOpeningAndClosingTimesSSDCallMessage1)
+		ExecutionEnd::SetRegistrationOpeningAndClosingTimesSSDExecution1StartEnd(SetRegistrationOpeningAndClosingTimesService SetRegistrationOpeningAndClosingTimesSSDExecution1)
+		ExecutionEnd::SetRegistrationOpeningAndClosingTimesSSDExecution1FinishEnd(SetRegistrationOpeningAndClosingTimesService SetRegistrationOpeningAndClosingTimesSSDExecution1)
+		MessageEnd::SetRegistrationOpeningAndClosingTimesSSDCallMessage1ReturnReceivingEnd(Administrators SetRegistrationOpeningAndClosingTimesSSDCallMessage1Return)
+		CombinedFragmentEnd::combinedFragement1FinishEnd(combinedFragement1)
+
+	}
+
+	Interaction ModifyAthleteInformationSSD {
+
+		[Participants: Administrators CollegeAdministrator ModifyAthleteInformationService]
+
+		CallMessage::ModifyAthleteInformationSSDCallMessage1(modifyAthleteInformation ModifyAthleteInformationSSDCallMessage1SendingEnd -> ModifyAthleteInformationSSDExecution1StartEnd)
+		ReturnMessage::ModifyAthleteInformationSSDCallMessage1Return(ModifyAthleteInformationSSDExecution1FinishEnd -> ModifyAthleteInformationSSDCallMessage1ReturnReceivingEnd ModifyAthleteInformationSSDCallMessage1)
+		CallMessage::ModifyAthleteInformationSSDCallMessage3(modifyAthleteInformationCollege ModifyAthleteInformationSSDCallMessage3SendingEnd -> ModifyAthleteInformationSSDExecution2StartEnd)
+		ReturnMessage::ModifyAthleteInformationSSDCallMessage3Return(ModifyAthleteInformationSSDExecution2FinishEnd -> ModifyAthleteInformationSSDCallMessage3ReturnReceivingEnd ModifyAthleteInformationSSDCallMessage3)
+
+		Execution::ModifyAthleteInformationSSDExecution1(ModifyAthleteInformationService ModifyAthleteInformationSSDExecution1StartEnd ModifyAthleteInformationSSDExecution1FinishEnd)
+		Execution::ModifyAthleteInformationSSDExecution2(ModifyAthleteInformationService ModifyAthleteInformationSSDExecution2StartEnd ModifyAthleteInformationSSDExecution2FinishEnd)
+
+		MessageEnd::ModifyAthleteInformationSSDCallMessage1SendingEnd(Administrators ModifyAthleteInformationSSDCallMessage1)
+		ExecutionEnd::ModifyAthleteInformationSSDExecution1StartEnd(ModifyAthleteInformationService ModifyAthleteInformationSSDExecution1)
+		ExecutionEnd::ModifyAthleteInformationSSDExecution1FinishEnd(ModifyAthleteInformationService ModifyAthleteInformationSSDExecution1)
+		MessageEnd::ModifyAthleteInformationSSDCallMessage1ReturnReceivingEnd(Administrators ModifyAthleteInformationSSDCallMessage1Return)
+		MessageEnd::ModifyAthleteInformationSSDCallMessage3SendingEnd(CollegeAdministrator ModifyAthleteInformationSSDCallMessage3)
+		ExecutionEnd::ModifyAthleteInformationSSDExecution2StartEnd(ModifyAthleteInformationService ModifyAthleteInformationSSDExecution2)
+		ExecutionEnd::ModifyAthleteInformationSSDExecution2FinishEnd(ModifyAthleteInformationService ModifyAthleteInformationSSDExecution2)
+		MessageEnd::ModifyAthleteInformationSSDCallMessage3ReturnReceivingEnd(CollegeAdministrator ModifyAthleteInformationSSDCallMessage3Return)
+
+	}
+
+	Service ContestRegistrationSystemSystem {
+
+	}
+
+	Service ThirdPartyServices {
+
+	}
+
+Service MakeRegistrationService {
+
+		[Operation]
+		makeRegistration(competitionItems, name, id)
+		competitionItems(competitionItems, name, id)
+
+	}
+
+	Service ViewCompetitionResultsService {
+
+		[Operation]
+		viewCompetitionResults(name, id)
+
+	}
+
+	Service UploadCompetitionResultsService {
+
+		[Operation]
+		uploadCompetitionResults(competitionItems, name, id)
+
+	}
+
+	Service SetRegistrationOpeningAndClosingTimesService {
+
+		[Operation]
+		setRegistrationOpeningAndClosingTimes(startTime, endingTime, competitionId)
+
+	}
+
+	Service ModifyAthleteInformationService {
+
+		[Operation]
+		modifyAthleteInformation(newCompetitionItems, newName, newId)
+		modifyAthleteInformationCollege(newCompetitionItems, newName, newId)
+
+	}
+
+}
+
+DomainModel ContestRegistrationSystem {
+
+}
+
