@@ -172,5 +172,54 @@ Service MakeRegistrationService {
 
 DomainModel ContestRegistrationSystem {
 
+Entity User {
+		Name : String
+		ID : String
+	}
+
+	Entity Administrators extends User {
+		[Refer]
+		ModifyAthleteInformation : ParticipantInformation Association
+		SetRegistrationOpeningAndClosingTimes : Competition Association
+	}
+
+	Entity CollegeAdministrator extends User {
+		CollegeInformation : String
+
+		[Refer]
+		ModifyAthleteInformation : ParticipantInformation Association
+	}
+
+	Entity TournamentOrganizer extends User {
+		[Refer]
+		UploadCompetitionResults : CompetitionResults Association
+	}
+
+	Entity Competition {
+		CompetitionItems : String
+		CompetitionID : String
+		StartTime : String
+		EndingTime : String
+
+		[Refer]
+		CompetitiontoCompetitionResults : CompetitionResults Association
+	}
+
+	Entity CompetitionResults {
+		CompetitionItems : String
+		Achievement : String
+		Name : String
+		PIID : String
+
+		[Refer]
+		CompetitionResultstoParticipantInformation : ParticipantInformation Association
+	}
+
+	Entity ParticipantInformation {
+		Name : String
+		PIID : String
+		CompetitionItems : String
+	}
+
 }
 
