@@ -179,20 +179,20 @@ Entity User {
 
 	Entity Administrators extends User {
 		[Refer]
-		ModifyAthleteInformation : ParticipantInformation Association
-		SetRegistrationOpeningAndClosingTimes : Competition Association
+		SetRegistrationOpeningAndClosingTimes : Competition* Association
+	Administrators : Participant* Association
 	}
 
 	Entity CollegeAdministrator extends User {
 		CollegeInformation : String
 
 		[Refer]
-		ModifyAthleteInformation : ParticipantInformation Association
+		CollegeAdministra : Participant* Association
 	}
 
 	Entity TournamentOrganizer extends User {
 		[Refer]
-		UploadCompetitionResults : CompetitionResults Association
+		TournamentOrganizer : CompetitionResults* Association
 	}
 
 	Entity Competition {
@@ -202,7 +202,8 @@ Entity User {
 		EndingTime : String
 
 		[Refer]
-		CompetitiontoCompetitionResults : CompetitionResults Association
+		CompetitiontoCompetitionResults : CompetitionResults* Association
+		CompetitiontoParticipant : Participant ! Association
 	}
 
 	Entity CompetitionResults {
@@ -212,13 +213,17 @@ Entity User {
 		PIID : String
 
 		[Refer]
-		CompetitionResultstoParticipantInformation : ParticipantInformation Association
+		CompetitionResultstoParticipant : Participant ! Association
+		CompetitionResultstoCompetition : Competition ! Association
 	}
 
-	Entity ParticipantInformation {
+	Entity Participant {
 		Name : String
 		PIID : String
 		CompetitionItems : String
+	[Refer]
+		ParticipanttoCompetitionResults : CompetitionResults* Association
+		ParticipanttoCompetition : Competition* Association
 	}
 
 }
