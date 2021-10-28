@@ -179,8 +179,8 @@ Entity User {
 
 	Entity Administrators extends User {
 		[Refer]
-		SetRegistrationOpeningAndClosingTimes : Competition* Association
-	Administrators : Participant* Association
+		Administrators : Participant* Association
+		Administrators : Competition* Association
 	}
 
 	Entity CollegeAdministrator extends User {
