@@ -131,7 +131,7 @@ UseCaseModel ContestRegistrationSystem {
 
 	}
 
-	Service MakeRegistrationService {
+Service MakeRegistrationService {
 
 		[Operation]
 		makeRegistration(competitionItems, name, id)
@@ -168,71 +168,11 @@ UseCaseModel ContestRegistrationSystem {
 
 	}
 
-	Contract MakeRegistrationService::makeRegistration(athleteID:Integer, competitionID:Integer): Boolean {
-
-		definition:
-			ath:Athlete = Athlete.allInstance()->any(a:Athlete | a.ID=athleteID),
-			com:Competition = Competition.allInstance()->any(c:Competion|c.ID=competitionID)
-
-		precondition:
-			ath.oclIsUndefined() = false and
-			com.oclIsUndefined() = false
-		postcondition:
-			let cr:CompetitionResults in
-			cr.oclIsNew() and
-			cr.participant = ath and
-			cr.competition = com and
-			result = true
-	}
-
-	Contract ModifyAthleteInformationService::modifyAthleteInformation(athleteID:Integer, name:String): Boolean {
-
-		definition:
-			ath:Athlete = Athlete.allInstance()->any(a:Athlete | a.ID=athleteID)
-
-		precondition:
-			ath.oclIsUndefined() = false
-		postcondition:
-			ath.name = name and
-			result = true
-	}
-
-	Contract SetRegistrationOpeningAndClosingTimesService::setRegistrationOpeningAndClosingTime(startTime:String, endTime:String, competitionID:Integer): Boolean {
-
-		definition:
-			com:Competition = Competition.allInstance()->any(c:Competition|c.ID=competitionID)
-
-		precondition:
-			com.oclIsUndefined() = false
-		postcondition:
-			com.startTime = startTime and
-			com.endTime = com.endTime and
-			result = true
-	}
-
-	Contract UploadCompetitionResultsService::uploadCompetitionResults(competitionID:Integer, athleteID:Integer, score:String)::Boolean{
-		definition:
-			cr:CompetitionResults=CompetitionResults.allInstance()->any(c:CompetitionResults|c.aID=athelteID and c.cID=competitionID)
-		precondition:
-			cr.oclIsUndefined()=false
-		postcondition:
-			cr.score=score and
-			result= true
-	}
-
-Contract ViewCompetitionResultsService::viewCompetitionResults(athleteID:Integer,competitionID:Integer)::String{
-		definition:
-			cr:CompetitionResults=CompetitionResults.allInstance()->any(c:CompetitionResults|c.aID=athelteID and c.cID=competitionID)
-		precondition:
-			cr.oclIsUndefined()=false
-		postcondition:
-			result=cr.score
-	}
 }
 
 DomainModel ContestRegistrationSystem {
 
-	Entity User {
+Entity User {
 		Name : String
 		ID : String
 	}
