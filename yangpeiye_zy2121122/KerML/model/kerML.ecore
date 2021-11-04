@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="kerML" nsURI="http://www.example.org/kerML" nsPrefix="kerML">
+  <eSubpackages name="Root">
+    <eSubpackages name="Elements">
+      <eClassifiers xsi:type="ecore:EClass" name="Element">
+        <eOperations name="escapedName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eOperations name="effectiveName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ownedElement" upperBound="-1"
+            eType="#//Root/Elements/Element" eOpposite="#//Root/Elements/Element/owner"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="owner" eType="#//Root/Elements/Element"
+            eOpposite="#//Root/Elements/Element/ownedElement"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+            iD="true"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualifiedName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="effectiveName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="aliasId" upperBound="-1"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="humanId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ownedRelationship"
+            upperBound="-1" eType="#//Root/Elements/Relationship" containment="true"
+            eOpposite="#//Root/Elements/Relationship/owningRelatedElement"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="owningRelationship"
+            eType="#//Root/Elements/Relationship" eOpposite="#//Root/Elements/Relationship/ownedRelatedElement"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="targetRelationship"
+            upperBound="-1" eType="#//Root/Elements/Relationship" eOpposite="#//Root/Elements/Relationship/target"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="sourceRelationship"
+            upperBound="-1" eType="#//Root/Elements/Relationship" eOpposite="#//Root/Elements/Relationship/source"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="relationship" upperBound="-1"
+            eType="#//Root/Elements/Relationship" eOpposite="#//Root/Elements/Relationship/relatedElement"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ownedAnnotation" upperBound="-1"
+            eType="#//Root/Annotations/Annotation" containment="true" eOpposite="#//Root/Annotations/Annotation/owningAnnotatedElement"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="documentationComment"
+            upperBound="-1" eType="#//Root/Annotations/Comment"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="documentation" upperBound="-1"
+            eType="#//Root/Annotations/Documentation" containment="true" eOpposite="#//Root/Annotations/Documentation/owningDocumentedElement"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ownedTextualrepresentation"
+            upperBound="-1" eType="#//Root/Annotations/TextualRepresentation"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="owningNamespace" eType="#//Root/Namespaces/Namespace"
+            eOpposite="#//Root/Namespaces/Namespace/ownedMember"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="owningMembership" eType="#//Root/Namespaces/Membership"
+            eOpposite="#//Root/Namespaces/Membership/ownedMemberElement"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="Relationship" eSuperTypes="#//Root/Elements/Element">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="owningRelatedElement"
+            eType="#//Root/Elements/Element" eOpposite="#//Root/Elements/Element/ownedRelationship"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ownedRelatedElement"
+            upperBound="-1" eType="#//Root/Elements/Element" containment="true" eOpposite="#//Root/Elements/Element/owningRelationship"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="target" upperBound="-1"
+            eType="#//Root/Elements/Element" eOpposite="#//Root/Elements/Element/targetRelationship"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="source" upperBound="-1"
+            eType="#//Root/Elements/Element" eOpposite="#//Root/Elements/Element/sourceRelationship"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="relatedElement" lowerBound="2"
+            upperBound="-1" eType="#//Root/Elements/Element" eOpposite="#//Root/Elements/Element/relationship"/>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages name="Annotations">
+      <eClassifiers xsi:type="ecore:EClass" name="AnnotatingElement" eSuperTypes="#//Root/Elements/Element">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="annotation" upperBound="-1"
+            eType="#//Root/Annotations/Annotation" eOpposite="#//Root/Annotations/Annotation/annotatingElement"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="annotatedElement" upperBound="-1"
+            eType="#//Root/Elements/Element"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="Annotation" eSuperTypes="#//Root/Elements/Relationship">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="owningAnnotatedElement"
+            eType="#//Root/Elements/Element" eOpposite="#//Root/Elements/Element/ownedAnnotation"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="annotatingElement"
+            lowerBound="1" eType="#//Root/Annotations/AnnotatingElement" eOpposite="#//Root/Annotations/AnnotatingElement/annotation"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="annotatedElement" lowerBound="1"
+            eType="#//Root/Elements/Element"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="Comment" eSuperTypes="#//Root/Annotations/AnnotatingElement">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="body" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="Documentation" eSuperTypes="#//Root/Annotations/Annotation">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="documentatingComment"
+            lowerBound="1" eType="#//Root/Annotations/Comment" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="owningDocumentedElement"
+            lowerBound="1" eType="#//Root/Elements/Element" eOpposite="#//Root/Elements/Element/documentation"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="TextualRepresentation" eSuperTypes="#//Root/Annotations/AnnotatingElement">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="language" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="body" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="representedElement"
+            lowerBound="1" eType="#//Root/Elements/Element"/>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages name="Namespaces">
+      <eClassifiers xsi:type="ecore:EClass" name="Namespace" eSuperTypes="#//Root/Elements/Element">
+        <eOperations name="nameOf" upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+          <eParameters name="element" eType="#//Root/Elements/Element"/>
+        </eOperations>
+        <eOperations name="visibilityOf" eType="#//Root/Namespaces/VisibilityKind">
+          <eParameters name="mem" eType="#//Root/Namespaces/Membership"/>
+        </eOperations>
+        <eOperations name="visibleMemberships" upperBound="-1" eType="#//Root/Namespaces/Membership">
+          <eParameters name="excluded" eType="#//Root/Namespaces/Namespace"/>
+          <eParameters name="isRecursive" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+          <eParameters name="includeAll" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+        </eOperations>
+        <eOperations name="importedMemberships" upperBound="-1" eType="#//Root/Namespaces/Membership">
+          <eParameters name="excluded" eType="#//Root/Namespaces/Namespace"/>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMember" upperBound="-1"
+            eType="#//Root/Elements/Element" eOpposite="#//Root/Elements/Element/owningNamespace"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="member" upperBound="-1"
+            eType="#//Root/Elements/Element"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="membership" upperBound="-1"
+            eType="#//Root/Namespaces/Membership"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMembership" upperBound="-1"
+            eType="#//Root/Namespaces/Membership" containment="true" eOpposite="#//Root/Namespaces/Membership/membershipOwningNamespace"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="importedMembership"
+            upperBound="-1" eType="#//Root/Namespaces/Membership"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ownedImport" upperBound="-1"
+            eType="#//Root/Namespaces/Import" containment="true" eOpposite="#//Root/Namespaces/Import/importOwningNamespace"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="Membership" eSuperTypes="#//Root/Elements/Relationship">
+        <eOperations name="isDistinguishableFrom" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean">
+          <eParameters name="other" eType="#//Root/Namespaces/Membership"/>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="membershipOwningNamespace"
+            lowerBound="1" eType="#//Root/Namespaces/Namespace" eOpposite="#//Root/Namespaces/Namespace/ownedMembership"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="memberName" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="effectiveMemberName"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility" eType="#//Root/Namespaces/VisibilityKind"
+            defaultValueLiteral="public"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMemberElement"
+            eType="#//Root/Elements/Element" containment="true" eOpposite="#//Root/Elements/Element/owningMembership"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="memberElement" lowerBound="1"
+            eType="#//Root/Elements/Element"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="Import" eSuperTypes="#//Root/Elements/Relationship">
+        <eOperations name="importedMembership" eType="#//Root/Namespaces/Membership">
+          <eParameters name="excluded" eType="#//Root/Namespaces/Namespace"/>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="importOwningNamespace"
+            lowerBound="1" eType="#//Root/Namespaces/Namespace" eOpposite="#//Root/Namespaces/Namespace/ownedImport"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="importedNamespace"
+            lowerBound="1" eType="#//Root/Namespaces/Namespace"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="visibility" eType="#//Root/Namespaces/VisibilityKind"
+            defaultValueLiteral="public"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="importedMemberName"
+            eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="isRecursive" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="isImportAll" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" name="VisibilityKind">
+        <eLiterals name="private"/>
+        <eLiterals name="protected" value="1"/>
+        <eLiterals name="public" value="2"/>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+  <eSubpackages name="Core">
+    <eSubpackages name="Types">
+      <eClassifiers xsi:type="ecore:EClass" name="Type" eSuperTypes="#//Root/Namespaces/Namespace">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAbstract" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="isSufficient" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="isConjugated" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Boolean"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="featureMembership"
+            upperBound="-1" eType="#//Core/Types/FeatureMembership"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="featuremembership"
+            upperBound="-1" eType="#//Core/Types/FeatureMembership" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="FeatureMembership" eSuperTypes="#//Root/Namespaces/Membership #//Core/Features/TypeFeaturing">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMemberFeature"
+            eType="#//Core/Features/Feature" containment="true" eOpposite="#//Core/Features/Feature/owningFeatureMembership"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="memberFeature" lowerBound="1"
+            eType="#//Core/Features/Feature"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="Multiplicity" eSuperTypes="#//Core/Features/Feature"/>
+    </eSubpackages>
+    <eSubpackages name="Classifiers"/>
+    <eSubpackages name="Features">
+      <eClassifiers xsi:type="ecore:EClass" name="TypeFeaturing"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Feature">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="owningFeatureMembership"
+            eType="#//Core/Types/FeatureMembership" eOpposite="#//Core/Types/FeatureMembership/ownedMemberFeature"/>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+  <eSubpackages name="Kernel"/>
+</ecore:EPackage>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/KerML/src-gen" creationIcons="false" editDirectory="/KerML.edit/src-gen"
+    editorDirectory="/KerML.editor/src-gen" modelPluginID="KerML" modelName="KerML"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="#//kerML/Root" operationReflection="true" importOrganizing="true">
+  <foreignModel>kerML.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="KerML" disposableProviderFactory="true" ecorePackage="kerML.ecore#/">
+    <nestedGenPackages prefix="NewPackage1" disposableProviderFactory="true" ecorePackage="kerML.ecore#//Root">
+      <nestedGenPackages prefix="Elements" disposableProviderFactory="true" ecorePackage="kerML.ecore#//Root/Elements">
+        <genClasses ecoreClass="kerML.ecore#//Root/Elements/Element">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/ownedElement"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/owner"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Elements/Element/identifier"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Elements/Element/name"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Elements/Element/qualifiedName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Elements/Element/effectiveName.1"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Elements/Element/aliasId"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Elements/Element/humanId"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/ownedRelationship"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/owningRelationship"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/targetRelationship"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/sourceRelationship"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/relationship"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/ownedAnnotation"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/documentationComment"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/documentation"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/ownedTextualrepresentation"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/owningNamespace"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Element/owningMembership"/>
+          <genOperations ecoreOperation="kerML.ecore#//Root/Elements/Element/escapedName"/>
+          <genOperations ecoreOperation="kerML.ecore#//Root/Elements/Element/effectiveName"/>
+        </genClasses>
+        <genClasses ecoreClass="kerML.ecore#//Root/Elements/Relationship">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Relationship/owningRelatedElement"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Relationship/ownedRelatedElement"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Relationship/target"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Relationship/source"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Elements/Relationship/relatedElement"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Annotations" disposableProviderFactory="true" ecorePackage="kerML.ecore#//Root/Annotations">
+        <genClasses ecoreClass="kerML.ecore#//Root/Annotations/AnnotatingElement">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Annotations/AnnotatingElement/annotation"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Annotations/AnnotatingElement/annotatedElement"/>
+        </genClasses>
+        <genClasses ecoreClass="kerML.ecore#//Root/Annotations/Annotation">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference kerML.ecore#//Root/Annotations/Annotation/owningAnnotatedElement"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Annotations/Annotation/annotatingElement"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Annotations/Annotation/annotatedElement"/>
+        </genClasses>
+        <genClasses ecoreClass="kerML.ecore#//Root/Annotations/Comment">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Annotations/Comment/body"/>
+        </genClasses>
+        <genClasses ecoreClass="kerML.ecore#//Root/Annotations/Documentation">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kerML.ecore#//Root/Annotations/Documentation/documentatingComment"/>
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference kerML.ecore#//Root/Annotations/Documentation/owningDocumentedElement"/>
+        </genClasses>
+        <genClasses ecoreClass="kerML.ecore#//Root/Annotations/TextualRepresentation">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Annotations/TextualRepresentation/language"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Annotations/TextualRepresentation/body"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Annotations/TextualRepresentation/representedElement"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Namespaces" disposableProviderFactory="true" ecorePackage="kerML.ecore#//Root/Namespaces">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="kerML.ecore#//Root/Namespaces/VisibilityKind">
+          <genEnumLiterals ecoreEnumLiteral="kerML.ecore#//Root/Namespaces/VisibilityKind/private"/>
+          <genEnumLiterals ecoreEnumLiteral="kerML.ecore#//Root/Namespaces/VisibilityKind/protected"/>
+          <genEnumLiterals ecoreEnumLiteral="kerML.ecore#//Root/Namespaces/VisibilityKind/public"/>
+        </genEnums>
+        <genClasses ecoreClass="kerML.ecore#//Root/Namespaces/Namespace">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Namespace/ownedMember"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Namespace/member"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Namespace/membership"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Namespace/ownedMembership"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Namespace/importedMembership"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Namespace/ownedImport"/>
+          <genOperations ecoreOperation="kerML.ecore#//Root/Namespaces/Namespace/nameOf">
+            <genParameters ecoreParameter="kerML.ecore#//Root/Namespaces/Namespace/nameOf/element"/>
+          </genOperations>
+          <genOperations ecoreOperation="kerML.ecore#//Root/Namespaces/Namespace/visibilityOf">
+            <genParameters ecoreParameter="kerML.ecore#//Root/Namespaces/Namespace/visibilityOf/mem"/>
+          </genOperations>
+          <genOperations ecoreOperation="kerML.ecore#//Root/Namespaces/Namespace/visibleMemberships">
+            <genParameters ecoreParameter="kerML.ecore#//Root/Namespaces/Namespace/visibleMemberships/excluded"/>
+            <genParameters ecoreParameter="kerML.ecore#//Root/Namespaces/Namespace/visibleMemberships/isRecursive"/>
+            <genParameters ecoreParameter="kerML.ecore#//Root/Namespaces/Namespace/visibleMemberships/includeAll"/>
+          </genOperations>
+          <genOperations ecoreOperation="kerML.ecore#//Root/Namespaces/Namespace/importedMemberships">
+            <genParameters ecoreParameter="kerML.ecore#//Root/Namespaces/Namespace/importedMemberships/excluded"/>
+          </genOperations>
+        </genClasses>
+        <genClasses ecoreClass="kerML.ecore#//Root/Namespaces/Membership">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Membership/membershipOwningNamespace"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Namespaces/Membership/memberName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Namespaces/Membership/effectiveMemberName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Namespaces/Membership/visibility"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Membership/ownedMemberElement"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Membership/memberElement"/>
+          <genOperations ecoreOperation="kerML.ecore#//Root/Namespaces/Membership/isDistinguishableFrom">
+            <genParameters ecoreParameter="kerML.ecore#//Root/Namespaces/Membership/isDistinguishableFrom/other"/>
+          </genOperations>
+        </genClasses>
+        <genClasses ecoreClass="kerML.ecore#//Root/Namespaces/Import">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Import/importOwningNamespace"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Root/Namespaces/Import/importedNamespace"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Namespaces/Import/visibility"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Namespaces/Import/importedMemberName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Namespaces/Import/isRecursive"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Root/Namespaces/Import/isImportAll"/>
+          <genOperations ecoreOperation="kerML.ecore#//Root/Namespaces/Import/importedMembership">
+            <genParameters ecoreParameter="kerML.ecore#//Root/Namespaces/Import/importedMembership/excluded"/>
+          </genOperations>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="NewPackage2" disposableProviderFactory="true" ecorePackage="kerML.ecore#//Core">
+      <nestedGenPackages prefix="Types" disposableProviderFactory="true" ecorePackage="kerML.ecore#//Core/Types">
+        <genClasses ecoreClass="kerML.ecore#//Core/Types/Type">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Core/Types/Type/isAbstract"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Core/Types/Type/isSufficient"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute kerML.ecore#//Core/Types/Type/isConjugated"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Core/Types/Type/featureMembership"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kerML.ecore#//Core/Types/Type/featuremembership"/>
+        </genClasses>
+        <genClasses ecoreClass="kerML.ecore#//Core/Types/FeatureMembership">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference kerML.ecore#//Core/Types/FeatureMembership/ownedMemberFeature"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference kerML.ecore#//Core/Types/FeatureMembership/memberFeature"/>
+        </genClasses>
+        <genClasses ecoreClass="kerML.ecore#//Core/Types/Multiplicity"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="NewPackage2" disposableProviderFactory="true" ecorePackage="kerML.ecore#//Core/Classifiers"/>
+      <nestedGenPackages prefix="Features" disposableProviderFactory="true" ecorePackage="kerML.ecore#//Core/Features">
+        <genClasses ecoreClass="kerML.ecore#//Core/Features/TypeFeaturing"/>
+        <genClasses ecoreClass="kerML.ecore#//Core/Features/Feature">
+          <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference kerML.ecore#//Core/Features/Feature/owningFeatureMembership"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="NewPackage3" disposableProviderFactory="true" ecorePackage="kerML.ecore#//Kernel"/>
+  </genPackages>
+</genmodel:GenModel>
