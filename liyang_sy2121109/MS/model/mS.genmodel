@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/MS/src-gen" creationIcons="false" editDirectory="/MS.edit/src-gen"
+    editorDirectory="/MS.editor/src-gen" modelPluginID="MS" modelName="MS" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>mS.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="MS" disposableProviderFactory="true" ecorePackage="mS.ecore#/">
+    <genClasses ecoreClass="mS.ecore#//UseCaseModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//UseCaseModel/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//UseCaseModel/includedContext"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//UseCaseModel/interaction"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//UseCaseModel/contract"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//UseCaseContext">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//UseCaseContext/uc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//UseCaseContext/service"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//UseCaseContext/entitycontext"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//UC">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//UC/relatduc"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//UC/ssd"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//UC/subUC"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//UC/delivered_information"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//UC/isEnd"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//UC/isStart"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//UC/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//UC/id"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//Service">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//Service/operation"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//Interaction"/>
+    <genClasses ecoreClass="mS.ecore#//Entity">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//Entity/reference"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//Contract">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//Contract/manipulate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//Contract/operation"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//Message">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//Message/interaction"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//CallMessage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//CallMessage/operation"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//ReturnMessage"/>
+    <genClasses ecoreClass="mS.ecore#//Operation"/>
+    <genClasses ecoreClass="mS.ecore#//EntityContext">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//EntityContext/entity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//EntityContext/uerinterface"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//EntityContext/systeminterface"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//EntityContext/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//EntityContext/usecasecontext"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//DomainModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//DomainModel/entitycontext"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//DomainModel/name"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//UerInterface">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//UerInterface/service"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//UerInterface/name"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//SystemInterface">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//SystemInterface/reference"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//Reference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//Reference/entity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//Reference/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//Reference/isMultiple"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//Reference/isReverseAssociation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//Reference/isAggregation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//Reference/isComosition"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//RequirementModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//RequirementModel/domainmodel"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//RequirementModel/usecasemodel"/>
+    </genClasses>
+    <genClasses ecoreClass="mS.ecore#//Delivered_Information"/>
+  </genPackages>
+</genmodel:GenModel>

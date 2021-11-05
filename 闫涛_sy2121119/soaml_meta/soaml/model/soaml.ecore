@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="soaml" nsURI="http://www.example.org/soaml" nsPrefix="soaml">
+  <eClassifiers xsi:type="ecore:EClass" name="Participant" abstract="true" eSuperTypes="#//Service #//ServiceInterface"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Agent" eSuperTypes="#//Participant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consumer" eType="#//Consumer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="provider" eType="#//Provider"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Capability" eSuperTypes="#//ServiceInterface">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="use" upperBound="-1" eType="#//Capability"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceInterface"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Consumer" abstract="true" interface="true"
+      eSuperTypes="#//ServiceContract">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="provider" eType="#//Provider"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceContract" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Provider" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consumer" eType="#//Consumer"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Service" abstract="true" interface="true"/>
+</ecore:EPackage>
