@@ -1,0 +1,61 @@
+/**
+ */
+package userStory2;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>UC</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link userStory2.UC#getUserstory <em>Userstory</em>}</li>
+ *   <li>{@link userStory2.UC#getName <em>Name</em>}</li>
+ * </ul>
+ *
+ * @see userStory2.UserStory2Package#getUC()
+ * @model
+ * @generated
+ */
+public interface UC extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Userstory</b></em>' containment reference list.
+	 * The list contents are of type {@link userStory2.UserStory}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Userstory</em>' containment reference list.
+	 * @see userStory2.UserStory2Package#getUC_Userstory()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<UserStory> getUserstory();
+
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see userStory2.UserStory2Package#getUC_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link userStory2.UC#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+} // UC

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/EARS/src-gen" creationIcons="false" editDirectory="/EARS.edit/src-gen"
+    editorDirectory="/EARS.editor/src-gen" modelPluginID="EARS" modelName="EARS" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>eARS.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="EARS" disposableProviderFactory="true" ecorePackage="eARS.ecore#/">
+    <genClasses ecoreClass="eARS.ecore#//EARS">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//EARS/ub"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//EARS/ev"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//EARS/st"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//EARS/uw"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//EARS/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//EARS/hy"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//UB">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//UB/the"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//UB/shall"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//UB/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//SystemName">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//SystemName/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//SystemResponse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//SystemResponse/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//EV">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//EV/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//EV/when"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//EV/the"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//EV/shall"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//OptionalPreconditions">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//OptionalPreconditions/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//UW">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//UW/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//UW/the"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//UW/shall"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//UW/if"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//ST">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//ST/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//ST/while"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//ST/shall"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//ST/the"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//InASpecificState">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//InASpecificState/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//OP">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//OP/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//OP/where"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//OP/the"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//OP/shall"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//FeatureIsIncluded">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//FeatureIsIncluded/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="eARS.ecore#//HY">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute eARS.ecore#//HY/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//HY/ifthen"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//HY/shall"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//HY/the"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//HY/while"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference eARS.ecore#//HY/where"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
