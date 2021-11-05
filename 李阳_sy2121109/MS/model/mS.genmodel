@@ -23,11 +23,11 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//UC/relatduc"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//UC/ssd"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//UC/subUC"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference mS.ecore#//UC/delivered_information"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//UC/isEnd"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//UC/isStart"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//UC/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mS.ecore#//UC/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//UC/delivered_information"/>
     </genClasses>
     <genClasses ecoreClass="mS.ecore#//Service">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mS.ecore#//Service/operation"/>
