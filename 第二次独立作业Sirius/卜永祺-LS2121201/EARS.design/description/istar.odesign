@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="EARS" version="12.0.0.2017041100">
+  <ownedViewpoints name="ears">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="ears" domainClass="eARS::EARS" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="Ubiquitous" preconditionExpression="ocl:self.oclIsTypeOf(eARS::Ubiquitous)" semanticCandidatesExpression="aql:self.ub" domainClass="eARS::Ubiquitous">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears11.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="EventDriven" preconditionExpression="ocl:" domainClass="eARS::EventDriven">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears11.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="UnwantedBehaviour" domainClass="eARS::UnwantedBehaviour">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears11.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="StateDriven" domainClass="eARS::StateDriven">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears11.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="OptionalFeatures" domainClass="eARS::OptionalFeatures">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears11.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="Complex" domainClass="eARS::Complex">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears11.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <containerMappings name="Ubiquitous" preconditionExpression="ocl:self.oclIsTypeOf(eARS::Ubiquitous)" semanticCandidatesExpression="aql:self.ub" domainClass="eARS::Ubiquitous">
+          <subNodeMappings name="System" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::System">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears2.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Response" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::Response">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears4.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" workspacePath="/EARS.design/images/ears5.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="EventDriven" domainClass="eARS::EventDriven">
+          <subNodeMappings name="System" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::System">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears3.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Response" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::Response">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears4.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Preconditions" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::Preconditions">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears2.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" workspacePath="/EARS.design/images/ears1.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="UnwantedBehaviour" domainClass="eARS::UnwantedBehaviour">
+          <subNodeMappings name="Preconditions" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::Preconditions">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears2.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="System" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::System">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears3.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Response" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::Response">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears4.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" workspacePath="/EARS.design/images/ears6.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Complex" domainClass="eARS::Complex">
+          <subNodeMappings name="State" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::State">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears2.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="FeatureIs" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::FeatureIs">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears2.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Preconditions" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::Preconditions">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears2.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="System" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::System">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears3.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Response" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::Response">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears4.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" workspacePath="/EARS.design/images/ears8.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="StateDriven" domainClass="eARS::StateDriven">
+          <subNodeMappings name="State" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::State">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears2.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="System" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::System">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears3.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Response" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::Response">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears4.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" workspacePath="/EARS.design/images/ears7.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="OptionalFeatures" domainClass="eARS::OptionalFeatures">
+          <subNodeMappings name="FeatureIs" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::FeatureIs">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears2.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="System" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::System">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears3.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Response" semanticCandidatesExpression="feature:eAllContents" domainClass="eARS::Response">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/ears4.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" labelExpression="feature:Name" workspacePath="/EARS.design/images/ears9.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Ubiquitous">
+          <ownedTools xsi:type="tool:ToolGroup" name="Ubiquitous">
+            <tools xsi:type="tool:NodeCreationDescription" name="Ubiquitous" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@nodeMappings[name='Ubiquitous']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Ubiquitous" referenceName="ub">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Ubiquitous'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="System" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='Ubiquitous']/@subNodeMappings[name='System']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::System" referenceName="the">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'System'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="Response" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='Ubiquitous']/@subNodeMappings[name='Response']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Response" referenceName="shall">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Response'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolGroup" name="EventDriven">
+            <tools xsi:type="tool:NodeCreationDescription" name="EventDriven" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@nodeMappings[name='EventDriven']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::EventDriven" referenceName="ub">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'EventDriven'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="Preconditions" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='EventDriven']/@subNodeMappings[name='Preconditions']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Preconditions" referenceName="when">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Preconditions'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="System" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='EventDriven']/@subNodeMappings[name='System']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::System" referenceName="the">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'System'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="Response" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='EventDriven']/@subNodeMappings[name='Response']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Response" referenceName="shall">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Response'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolGroup" name="UnwantedBehaviour">
+            <tools xsi:type="tool:NodeCreationDescription" name="UnwantedBehaviour" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@nodeMappings[name='UnwantedBehaviour']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::UnwantedBehaviour" referenceName="ub">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'UnwantedBehaviour'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="Preconditions" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='UnwantedBehaviour']/@subNodeMappings[name='Preconditions']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Preconditions" referenceName="if">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Preconditions'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="System" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='UnwantedBehaviour']/@subNodeMappings[name='System']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::System" referenceName="the">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'System'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="Response" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='UnwantedBehaviour']/@subNodeMappings[name='Response']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Response" referenceName="shall">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Response'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolGroup" name="StateDriven">
+            <tools xsi:type="tool:NodeCreationDescription" name="StateDriven" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@nodeMappings[name='StateDriven']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::EventDriven" referenceName="ub">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'EventDriven'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="State" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='StateDriven']/@subNodeMappings[name='State']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::State" referenceName="while">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'State'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="System" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='StateDriven']/@subNodeMappings[name='System']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::System" referenceName="the">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'System'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="Response" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='StateDriven']/@subNodeMappings[name='Response']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Response" referenceName="shall">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Response'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolGroup" name="OptionalFeatures">
+            <tools xsi:type="tool:NodeCreationDescription" name="OptionalFeatures" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@nodeMappings[name='OptionalFeatures']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::OptionalFeatures" referenceName="ub">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'OptionalFeatures'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="FeatureIs" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='OptionalFeatures']/@subNodeMappings[name='FeatureIs']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::FeatureIs" referenceName="where">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'FeatureIs'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="System" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='OptionalFeatures']/@subNodeMappings[name='System']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::System" referenceName="the">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'System'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="Response" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='OptionalFeatures']/@subNodeMappings[name='Response']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Response" referenceName="shall">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Response'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ToolGroup" name="Complex">
+            <tools xsi:type="tool:NodeCreationDescription" name="Complex" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@nodeMappings[name='Complex']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Complex" referenceName="ub">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Complex'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="FeatureIs" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='Complex']/@subNodeMappings[name='FeatureIs']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::FeatureIs" referenceName="where">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'FeatureIs'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="System" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='Complex']/@subNodeMappings[name='System']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::System" referenceName="the">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'System'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="Response" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='Complex']/@subNodeMappings[name='Response']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Response" referenceName="shall">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Response'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="State" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='Complex']/@subNodeMappings[name='State']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::State" referenceName="while">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'State'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+            <tools xsi:type="tool:NodeCreationDescription" name="Preconditions" nodeMappings="//@ownedViewpoints[name='ears']/@ownedRepresentations[name='ears']/@defaultLayer/@containerMappings[name='Complex']/@subNodeMappings[name='Preconditions']">
+              <variable name="container"/>
+              <viewVariable name="containerView"/>
+              <initialOperation>
+                <firstModelOperations xsi:type="tool_1:ChangeContext">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="eARS::Preconditions" referenceName="ifthen">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="Name" valueExpression="aql:'Preconditions'"/>
+                  </subModelOperations>
+                </firstModelOperations>
+              </initialOperation>
+            </tools>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>
