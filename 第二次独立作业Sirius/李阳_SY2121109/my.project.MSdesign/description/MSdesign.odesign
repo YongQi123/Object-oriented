@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="MSdesign" version="12.0.0.2017041100">
+  <ownedViewpoints name="RequirementModel">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="conceptual class diagram" domainClass="mS::DomainModel" enablePopupBars="true">
+      <metamodel href="http://www.example.org/mS#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="ProvideInterface" labelDirectEdit="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='EditEntityLabel']" domainClass="mS.ProvideInterface">
+          <style xsi:type="style:DotDescription" labelSize="10" showIcon="false" labelAlignment="LEFT" sizeComputationExpression="5" resizeKind="NSEW">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ReceivedInterface" domainClass="mS.ReceiveInterface">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" arcWidth="1" arcHeight="1" workspacePath="/my.project.MSdesign/icon/semicircle.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="Entity_Reference" sourceMapping="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@containerMappings[name='ContextContainer']/@subContainerMappings[name='EntityNode']" targetMapping="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@containerMappings[name='ContextContainer']/@subContainerMappings[name='EntityNode']" targetFinderExpression="aql:self.reference.entity" reconnections="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='reconnectEntityEdge']">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+            <endLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+            </endLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="InterfaceEdge" sourceMapping="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@containerMappings[name='ContextContainer']" targetMapping="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@nodeMappings[name='ProvideInterface']" targetFinderExpression="aql:self.userinterface">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="ContextContainer" labelDirectEdit="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='EditEntityLabel']" domainClass="mS.EntityContext">
+          <subContainerMappings name="EntityNode" labelDirectEdit="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='EditEntityLabel']" semanticCandidatesExpression="aql:self.entity" domainClass="mS.Entity" childrenPresentation="List">
+            <subNodeMappings name="EntityAttibutes" labelDirectEdit="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='EditEntityLabel']" semanticCandidatesExpression="feature:eAllContents" domainClass="mS.Attribute">
+              <style xsi:type="style:SquareDescription" borderSizeComputationExpression="100" borderLineStyle="dot" labelSize="12" labelAlignment="LEFT" labelPosition="node" resizeKind="NSEW">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" widthComputationExpression="10">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="SystemInterface" labelDirectEdit="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='EditEntityLabel']" semanticCandidatesExpression="feature:eAllContents" domainClass="mS.SystemInterface">
+            <subNodeMappings semanticCandidatesExpression="feature:eAllContents"/>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="&lt;&lt;interface>>">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="5" borderLineStyle="dash" labelSize="12">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="Create">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Context" containerMappings="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@containerMappings[name='ContextContainer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mS.EntityContext" referenceName="entitycontext">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="newContext"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Entity" label="Class" containerMappings="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@containerMappings[name='ContextContainer']/@subContainerMappings[name='EntityNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mS.Entity" referenceName="entity">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="newClass"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DirectEditLabel" name="EditEntityLabel">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="var:0"/>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="EdgeBetweeEntity" edgeMappings="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@edgeMappings[name='Entity_Reference']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mS.Reference" referenceName="reference">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:source.name + 'to' + target.name"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="entity" valueExpression="var:target"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ProviceInterface" nodeMappings="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@nodeMappings[name='ProvideInterface']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="mS.ProvideInterface" referenceName="uerinterface">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="newInterface"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="InterfaceEdge" edgeMappings="//@ownedViewpoints[name='RequirementModel']/@ownedRepresentations[name='conceptual%20class%20diagram']/@defaultLayer/@edgeMappings[name='InterfaceEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="userinterface" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ReconnectEdgeDescription" name="reconnectEntityEdge">
+            <source name="source"/>
+            <target name="target"/>
+            <sourceView name="sourceView"/>
+            <targetView name="targetView"/>
+            <element name="element"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="entity" valueExpression="target"/>
+              </firstModelOperations>
+            </initialOperation>
+            <edgeView name="edgeView"/>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="my.project.MSdesign.Services"/>
+  </ownedViewpoints>
+</description:Group>
