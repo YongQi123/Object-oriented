@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="SysMLv2" version="12.0.0.2017041100">
+  <ownedViewpoints name="MyViewpoint">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="State Machine" domainClass="sysMLv2::Package" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <edgeMappings name="TransitionUsage " sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']" targetFinderExpression="feature:target" sourceFinderExpression="aql:self.source" domainClass="sysMLv2::TransitionUsage" useDomainElement="true">
+          <style routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="intial edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']/@subNodeMappings[name='initial']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel']" targetFinderExpression="aql:self.ownedMembership.ownedMemberElement->first()">
+          <style routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="final edge" preconditionExpression="aql:self.equals(self.eContainer().eContainer().ownedMembership.ownedMemberElement->last())" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']/@subNodeMappings[name='final']" targetFinderExpression="aql:self.eContainer().eContainer()">
+          <style routingStyle="manhattan">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="State Definition" semanticCandidatesExpression="aql:self.ownedMembership.ownedMemberElement" domainClass="sysMLv2::StateDefinition" childrenPresentation="HorizontalStack">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'&lt;&lt;state def>>\n'+self.name">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="State Usage" preconditionExpression="service:isSimple()" semanticCandidatesExpression="aql:self.ownedMembership.ownedMemberElement" domainClass="sysMLv2::StateUsage" reusedContainerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'&lt;&lt;state usage>>\n'+self.name+':'+self.stateDefinition.name" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="State Usage Parallel" preconditionExpression="aql:self.isParallel" semanticCandidatesExpression="aql:self.ownedMembership.ownedMemberElement" domainClass="sysMLv2::StateUsage" reusedContainerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'&lt;&lt;state usage>>\n'+self.name+':'+self.stateDefinition.name+'\n{parallel}'" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="State Usage Composite" preconditionExpression="service:isComposite()" semanticCandidatesExpression="aql:self.ownedMembership.ownedMemberElement" domainClass="sysMLv2::StateUsage" reusedContainerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel']">
+          <subNodeMappings name="initial" semanticCandidatesExpression="var:self" domainClass="sysMLv2::StateUsage">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:''" labelPosition="node" resizeKind="NSEW" workspacePath="/SysMLv2.design/images/InitNode.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="final" semanticCandidatesExpression="var:self" domainClass="sysMLv2::StateUsage">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" showIcon="false" labelExpression="aql:''" labelPosition="node" resizeKind="NSEW" workspacePath="/SysMLv2.design/images/FinalNode.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelSize="12" showIcon="false" labelExpression="aql:'&lt;&lt;state usage>>\n'+self.name+':'+self.stateDefinition.name" roundedCorner="true">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </containerMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="SysMLv2.design.Services"/>
+  </ownedViewpoints>
+</description:Group>
