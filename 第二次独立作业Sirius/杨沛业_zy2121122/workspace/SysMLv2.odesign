@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="SysMLv2" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="SysMLv2" version="12.0.0.2017041100">
   <ownedViewpoints name="MyViewpoint">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="State Machine" domainClass="sysMLv2::Package" enablePopupBars="true">
+      <metamodel href="../../SysMLv2/model/sysMLv2.ecore#/"/>
       <defaultLayer name="Default">
         <edgeMappings name="TransitionUsage " sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']" targetFinderExpression="feature:target" sourceFinderExpression="aql:self.source" domainClass="sysMLv2::TransitionUsage" useDomainElement="true">
           <style routingStyle="manhattan">
@@ -11,7 +12,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="intial edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']/@subNodeMappings[name='initial']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel']" targetFinderExpression="aql:self.ownedMembership.ownedMemberElement->first()">
+        <edgeMappings name="intial edge" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']/@subNodeMappings[name='initial']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel']" targetFinderExpression="aql:self.ownedMembership.ownedMemberElement->filter(sysMLv2::StateUsage)->first()">
           <style routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -19,7 +20,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="final edge" preconditionExpression="aql:self.equals(self.eContainer().eContainer().ownedMembership.ownedMemberElement->last())" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']/@subNodeMappings[name='final']" targetFinderExpression="aql:self.eContainer().eContainer()">
+        <edgeMappings name="final edge" preconditionExpression="aql:source.equals(target.ownedMembership.ownedMemberElement->filter(sysMLv2::StateUsage)->last())" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite'] //@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Parallel']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage%20Composite']/@subNodeMappings[name='final']" targetFinderExpression="aql:self.eContainer().eContainer()">
           <style routingStyle="manhattan">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription labelSize="12">
@@ -71,6 +72,48 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="State Definition" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Definition']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="sysMLv2::Membership" referenceName="ownedMembership">
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="sysMLv2::StateDefinition" referenceName="ownedMemberElement"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="State Usage" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@containerMappings[name='State%20Usage']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:CreateInstance" typeName="sysMLv2::Membership" referenceName="ownedMembership">
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="sysMLv2::StateUsage" referenceName="ownedMemberElement" variableName="newState"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Transition Usage" edgeMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='State%20Machine']/@defaultLayer/@edgeMappings[name='TransitionUsage%20']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source.eContainer().eContainer()">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="sysMLv2::Membership" referenceName="ownedMembership">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="sysMLv2::TransitionUsage" referenceName="ownedMemberElement">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </defaultLayer>
     </ownedRepresentations>
     <ownedJavaExtensions qualifiedClassName="SysMLv2.design.Services"/>
