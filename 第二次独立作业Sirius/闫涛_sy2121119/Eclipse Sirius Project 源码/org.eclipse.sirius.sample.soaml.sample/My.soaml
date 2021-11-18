@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soaml:SoaML xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:soaml="http://www.eclipse.org/sirius/sample/soaml">
+  <port/>
+  <port>
+    <request/>
+    <service/>
+  </port>
+  <participant/>
+  <participant>
+    <provider/>
+    <agent/>
+    <consumer/>
+  </participant>
+  <collaboration/>
+  <collaboration>
+    <servicecontract/>
+    <servicearchitecture/>
+  </collaboration>
+  <capability/>
+  <capability>
+    <capabilityexposure/>
+    <capabilityrealization/>
+  </capability>
+</soaml:SoaML>

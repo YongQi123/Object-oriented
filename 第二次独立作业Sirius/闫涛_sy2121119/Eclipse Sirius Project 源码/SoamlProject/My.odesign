@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="SoaML" version="12.0.0.2017041100">
+  <ownedViewpoints name="Soaml">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Soaml diagram" domainClass="soaml::SoaML" enablePopupBars="true">
+      <metamodel href="http://www.eclipse.org/sirius/sample/soaml#/"/>
+      <defaultLayer name="Default">
+        <containerMappings name="Participant" domainClass="soaml::Participant">
+          <subNodeMappings name="Agent" semanticCandidatesExpression="feature:eAllContents" domainClass="soaml::Agent">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='orange']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Consumer" semanticCandidatesExpression="feature:eAllContents" domainClass="soaml::Consumer">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Provider" semanticCandidatesExpression="feature:eAllContents" domainClass="soaml::Provider">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='red']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" workspacePath="/SoamlProject/p/participant.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Port" domainClass="soaml::Port">
+          <subNodeMappings name="Requset" semanticCandidatesExpression="feature:eAllContents" domainClass="soaml::Request">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="Service" semanticCandidatesExpression="feature:eAllContents" domainClass="soaml::Service">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" workspacePath="/SoamlProject/p/port.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Collaboration" domainClass="soaml::Collaboration">
+          <subNodeMappings name="ServiceContract" semanticCandidatesExpression="feature:eAllContents" domainClass="soaml::ServiceContract">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="ServiceArchitecture" semanticCandidatesExpression="feature:eAllContents" domainClass="soaml::ServiceArchitecture">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" workspacePath="/SoamlProject/p/Collaboration.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <containerMappings name="Capability" domainClass="soaml::Capability">
+          <subNodeMappings name="CapabilityExposure" semanticCandidatesExpression="feature:eAllContents" domainClass="soaml::CapabilityExposure">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_chocolate']"/>
+            </style>
+          </subNodeMappings>
+          <subNodeMappings name="CapabilityRealization" semanticCandidatesExpression="feature:eAllContents" domainClass="soaml::CapabilityRealization">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" workspacePath="/SoamlProject/p/capability.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createParticipant" containerMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::Participant" referenceName="participant"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Agent" nodeMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@subNodeMappings[name='Agent']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::Agent" referenceName="agent"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Consumer" nodeMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@subNodeMappings[name='Consumer']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::Consumer" referenceName="consumer"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Provider" nodeMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@subNodeMappings[name='Provider']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::Provider" referenceName="provider"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createPort" containerMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::Port" referenceName="port"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Request" nodeMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']/@subNodeMappings[name='Requset']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::Request" referenceName="request"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Service" nodeMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']/@subNodeMappings[name='Service']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::Service" referenceName="service"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createCollaboration" containerMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::Collaboration" referenceName="collaboration"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ServiceContract" nodeMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']/@subNodeMappings[name='ServiceContract']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::ServiceContract" referenceName="servicecontract"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ServiceArchitecture" nodeMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']/@subNodeMappings[name='ServiceArchitecture']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:contaienr">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::ServiceArchitecture" referenceName="servicearchitecture"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="createCapability" containerMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::Capability" referenceName="capability"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CapabilityExposure" nodeMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']/@subNodeMappings[name='CapabilityExposure']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::CapabilityExposure" referenceName="capabilityexposure"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="CapabilityRealization" nodeMappings="//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']/@subNodeMappings[name='CapabilityRealization']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="soaml::CapabilityRealization" referenceName="capabilityrealization"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+  </ownedViewpoints>
+</description:Group>

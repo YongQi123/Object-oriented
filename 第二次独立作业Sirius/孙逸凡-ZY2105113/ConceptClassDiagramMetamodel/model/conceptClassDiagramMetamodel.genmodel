@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/ConceptClassDiagramMetamodel/src-gen" creationIcons="false"
+    editDirectory="/ConceptClassDiagramMetamodel.edit/src-gen" editorDirectory="/ConceptClassDiagramMetamodel.editor/src-gen"
+    modelPluginID="ConceptClassDiagramMetamodel" modelName="ConceptClassDiagramMetamodel"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>conceptClassDiagramMetamodel.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="ConceptClassDiagramMetamodel" disposableProviderFactory="true"
+      ecorePackage="conceptClassDiagramMetamodel.ecore#/">
+    <genClasses ecoreClass="conceptClassDiagramMetamodel.ecore#//RequirementModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//RequirementModel/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//RequirementModel/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//RequirementModel/usecasemodel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//RequirementModel/workflow"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//RequirementModel/ssd"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//RequirementModel/domainmodel"/>
+    </genClasses>
+    <genClasses ecoreClass="conceptClassDiagramMetamodel.ecore#//usecasemodel"/>
+    <genClasses ecoreClass="conceptClassDiagramMetamodel.ecore#//workflow"/>
+    <genClasses ecoreClass="conceptClassDiagramMetamodel.ecore#//ssd"/>
+    <genClasses ecoreClass="conceptClassDiagramMetamodel.ecore#//DomainModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//DomainModel/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//DomainModel/label"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//DomainModel/entity"/>
+    </genClasses>
+    <genClasses ecoreClass="conceptClassDiagramMetamodel.ecore#//Entity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//Entity/isCRUD"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//Entity/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//Entity/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//Entity/superentity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//Entity/entity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//Entity/entityOpposite"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//Entity/composition"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//Entity/aggregation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//Entity/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//Entity/invariance"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//Entity/reference"/>
+    </genClasses>
+    <genClasses ecoreClass="conceptClassDiagramMetamodel.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//Attribute/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//Attribute/isMultiple"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//Attribute/type"/>
+    </genClasses>
+    <genClasses ecoreClass="conceptClassDiagramMetamodel.ecore#//Invariance">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//Invariance/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute conceptClassDiagramMetamodel.ecore#//Invariance/isForAssociation"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference conceptClassDiagramMetamodel.ecore#//Invariance/ocl"/>
+    </genClasses>
+    <genClasses ecoreClass="conceptClassDiagramMetamodel.ecore#//type"/>
+    <genClasses ecoreClass="conceptClassDiagramMetamodel.ecore#//ocl"/>
+  </genPackages>
+</genmodel:GenModel>

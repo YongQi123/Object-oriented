@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="soaml" nsURI="http://www.eclipse.org/sirius/sample/soaml" nsPrefix="soaml">
+  <eClassifiers xsi:type="ecore:EClass" name="SoaML">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="port" upperBound="-1" eType="#//Port"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="participant" upperBound="-1"
+        eType="#//Participant" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="collaboration" upperBound="-1"
+        eType="#//Collaboration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="capability" upperBound="-1"
+        eType="#//Capability" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Port">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="request" upperBound="-1"
+        eType="#//Request" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="service" upperBound="-1"
+        eType="#//Service" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NewEClass3"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Request">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceinterface" upperBound="-1"
+        eType="#//ServiceInterface" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Service">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceinterface" upperBound="-1"
+        eType="#//ServiceInterface" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceInterface">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="capabilityexposure" upperBound="-1"
+        eType="#//CapabilityExposure" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Participant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="provider" upperBound="-1"
+        eType="#//Provider" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="agent" upperBound="-1"
+        eType="#//Agent" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consumer" upperBound="-1"
+        eType="#//Consumer" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Provider">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="message" upperBound="-1"
+        eType="#//Message" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="service" upperBound="-1"
+        eType="#//Service" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="servicecontract" upperBound="-1"
+        eType="#//ServiceContract" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Agent"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Consumer">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="message" upperBound="-1"
+        eType="#//Message" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="service" upperBound="-1"
+        eType="#//Service" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="servicecontract" upperBound="-1"
+        eType="#//ServiceContract" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Message">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachment" upperBound="-1"
+        eType="#//Attachment" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attachment"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Collaboration">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="servicecontract" upperBound="-1"
+        eType="#//ServiceContract" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="servicearchitecture" upperBound="-1"
+        eType="#//ServiceArchitecture" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceContract"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceArchitecture"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Capability">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="capabilityexposure" upperBound="-1"
+        eType="#//CapabilityExposure" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="capabilityrealization"
+        upperBound="-1" eType="#//CapabilityRealization" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CapabilityExposure"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CapabilityRealization"/>
+</ecore:EPackage>

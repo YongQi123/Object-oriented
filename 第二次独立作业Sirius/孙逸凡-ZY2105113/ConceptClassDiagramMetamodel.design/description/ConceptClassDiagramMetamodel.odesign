@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="ConceptClassDiagramMetamodel" version="12.0.0.2017041100">
+  <ownedViewpoints name="Entity">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Entity diagram" domainClass="conceptClassDiagramMetamodel.DomainModel" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <edgeMappings name="Composition" sourceMapping="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']" targetMapping="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']" targetFinderExpression="aql:self.composition">
+          <style sourceArrow="FillDiamond" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Generation" sourceMapping="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']" targetMapping="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']" targetFinderExpression="aql:self.superentity">
+          <style targetArrow="InputClosedArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Aggregation" sourceMapping="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']" targetMapping="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']" targetFinderExpression="aql:self.aggregation">
+          <style sourceArrow="Diamond" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Bi-direction" sourceMapping="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']" targetMapping="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']" targetFinderExpression="aql:self.entity">
+          <style sourceArrow="InputArrow" sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Reference" sourceMapping="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']" targetMapping="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']" targetFinderExpression="aql:self.reference">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="Entity" domainClass="conceptClassDiagramMetamodel.Entity">
+          <subNodeMappings name="Attribute" semanticCandidatesExpression="feature:eAllContents" domainClass="conceptClassDiagramMetamodel.Attribute">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/CDmetamodel.design/p/2.jpg">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" workspacePath="/CDmetamodel.design/p/1.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Composition" edgeMappings="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@edgeMappings[name='Composition']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="composition" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Entity" containerMappings="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="conceptClassDiagramMetamodel.Entity" referenceName="entity"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Attribute" nodeMappings="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@containerMappings[name='Entity']/@subNodeMappings[name='Attribute']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="conceptClassDiagramMetamodel::Attribute" referenceName="attribute"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Generation" edgeMappings="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@edgeMappings[name='Generation']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="superentity" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Aggregation" edgeMappings="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@edgeMappings[name='Aggregation']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="aggregation" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Bi-direction" edgeMappings="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@edgeMappings[name='Bi-direction']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="entity" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Reference" edgeMappings="//@ownedViewpoints[name='Entity']/@ownedRepresentations[name='Entity%20diagram']/@defaultLayer/@edgeMappings[name='Reference']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="reference" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="ConceptClassDiagramMetamodel.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

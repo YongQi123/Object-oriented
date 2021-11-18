@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="conceptClassDiagramMetamodel" nsURI="http://www.example.org/conceptClassDiagramMetamodel"
+    nsPrefix="conceptClassDiagramMetamodel">
+  <eClassifiers xsi:type="ecore:EClass" name="RequirementModel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usecasemodel" eType="#//usecasemodel"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="workflow" eType="#//workflow"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ssd" eType="#//ssd"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="domainmodel" eType="#//DomainModel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="usecasemodel"/>
+  <eClassifiers xsi:type="ecore:EClass" name="workflow"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ssd"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DomainModel">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entity" upperBound="-1"
+        eType="#//Entity" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Entity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isCRUD" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="superentity" eType="#//Entity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entity" eType="#//Entity"
+        eOpposite="#//Entity/entityOpposite"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entityOpposite" eType="#//Entity"
+        eOpposite="#//Entity/entity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="composition" upperBound="-1"
+        eType="#//Entity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aggregation" upperBound="-1"
+        eType="#//Entity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" upperBound="-1"
+        eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="invariance" upperBound="-1"
+        eType="#//Invariance" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reference" upperBound="-1"
+        eType="#//Entity"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isMultiple" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="#//type"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Invariance">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isForAssociation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ocl" eType="#//ocl"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="type"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ocl"/>
+</ecore:EPackage>

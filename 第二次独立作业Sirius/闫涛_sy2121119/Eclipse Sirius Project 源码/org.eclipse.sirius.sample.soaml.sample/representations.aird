@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:soaml="http://www.eclipse.org/sirius/sample/soaml" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_PuO-0ERTEeyS4aAxou1IBQ" selectedViews="_QCgvEEarEey2McNJmMdjRg" version="14.3.1.202003261200">
+    <semanticResources>My.soaml</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_QCgvEEarEey2McNJmMdjRg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_RjkSIUarEey2McNJmMdjRg" name="new Soaml diagram" repPath="#_RjL3oEarEey2McNJmMdjRg" changeId="76495d71-f1e7-4c7d-a42e-069261621736">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']"/>
+        <target xmi:type="soaml:SoaML" href="My.soaml#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_RjL3oEarEey2McNJmMdjRg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_RkJg8EarEey2McNJmMdjRg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_RkJg8UarEey2McNJmMdjRg" type="Sirius" element="_RjL3oEarEey2McNJmMdjRg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_Rk6V8EarEey2McNJmMdjRg" type="2002" element="_RkVuMEarEey2McNJmMdjRg">
+          <children xmi:type="notation:Node" xmi:id="_RlAckEarEey2McNJmMdjRg" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_RlAckUarEey2McNJmMdjRg" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_RlAckkarEey2McNJmMdjRg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_RlAck0arEey2McNJmMdjRg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Rk6V8UarEey2McNJmMdjRg" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Rk6V8karEey2McNJmMdjRg" y="24" width="102" height="115"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_psavYEbVEeyKxeUB0qdKbA" type="2002" element="_prFSpEbVEeyKxeUB0qdKbA">
+          <children xmi:type="notation:Node" xmi:id="_psavY0bVEeyKxeUB0qdKbA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_psavZEbVEeyKxeUB0qdKbA" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_psavZUbVEeyKxeUB0qdKbA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_psavZkbVEeyKxeUB0qdKbA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_psavYUbVEeyKxeUB0qdKbA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_psavYkbVEeyKxeUB0qdKbA" x="-24" y="270"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_zB1moEbVEeyKxeUB0qdKbA" type="2002" element="_zBExo0bVEeyKxeUB0qdKbA">
+          <children xmi:type="notation:Node" xmi:id="_zB1mo0bVEeyKxeUB0qdKbA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_zB1mpEbVEeyKxeUB0qdKbA" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_zB1mpUbVEeyKxeUB0qdKbA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_zB1mpkbVEeyKxeUB0qdKbA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_zB1moUbVEeyKxeUB0qdKbA" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zB1mokbVEeyKxeUB0qdKbA" x="-24" y="144"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_YjcZREb2EeyNHPHBnP6rAQ" type="2002" element="_YjZ9AEb2EeyNHPHBnP6rAQ">
+          <children xmi:type="notation:Node" xmi:id="_YjdAUEb2EeyNHPHBnP6rAQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_YjdAUUb2EeyNHPHBnP6rAQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_YjdAUkb2EeyNHPHBnP6rAQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_YjdAU0b2EeyNHPHBnP6rAQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_YjcZRUb2EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YjcZRkb2EeyNHPHBnP6rAQ" x="-36" y="396"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_-hy_0kb2EeyNHPHBnP6rAQ" type="2002" element="_-hv8gEb2EeyNHPHBnP6rAQ">
+          <children xmi:type="notation:Node" xmi:id="_-hy_1Ub2EeyNHPHBnP6rAQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_-hy_1kb2EeyNHPHBnP6rAQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_-1FvQkb2EeyNHPHBnP6rAQ" type="3007" element="_-1Cr8Eb2EeyNHPHBnP6rAQ">
+              <children xmi:type="notation:Node" xmi:id="_-1FvRUb2EeyNHPHBnP6rAQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_-1FvRkb2EeyNHPHBnP6rAQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_-1FvR0b2EeyNHPHBnP6rAQ" type="3003" element="_-1DTAEb2EeyNHPHBnP6rAQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_-1FvSEb2EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-1FvSUb2EeyNHPHBnP6rAQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_-1FvQ0b2EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-1FvREb2EeyNHPHBnP6rAQ" x="20" y="43" width="61" height="25"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="__Iuc8kb2EeyNHPHBnP6rAQ" type="3007" element="__IrZoEb2EeyNHPHBnP6rAQ">
+              <children xmi:type="notation:Node" xmi:id="__Iuc9Ub2EeyNHPHBnP6rAQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="__Iuc9kb2EeyNHPHBnP6rAQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="__IvEAEb2EeyNHPHBnP6rAQ" type="3003" element="__IrZoUb2EeyNHPHBnP6rAQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="__IvEAUb2EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__IvEAkb2EeyNHPHBnP6rAQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="__Iuc80b2EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__Iuc9Eb2EeyNHPHBnP6rAQ" x="169" y="43" width="37" height="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="__mUX4Eb2EeyNHPHBnP6rAQ" type="3007" element="__mQtgEb2EeyNHPHBnP6rAQ">
+              <children xmi:type="notation:Node" xmi:id="__mUX40b2EeyNHPHBnP6rAQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="__mUX5Eb2EeyNHPHBnP6rAQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="__mUX5Ub2EeyNHPHBnP6rAQ" type="3003" element="__mQtgUb2EeyNHPHBnP6rAQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="__mUX5kb2EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mUX50b2EeyNHPHBnP6rAQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="__mUX4Ub2EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="__mUX4kb2EeyNHPHBnP6rAQ" x="103" y="58" width="37" height="30"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_-hy_10b2EeyNHPHBnP6rAQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_-hy_2Eb2EeyNHPHBnP6rAQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_-hy_00b2EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-hy_1Eb2EeyNHPHBnP6rAQ" x="397" y="102"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_ADNvQEb3EeyNHPHBnP6rAQ" type="2002" element="_ADJd0Eb3EeyNHPHBnP6rAQ">
+          <children xmi:type="notation:Node" xmi:id="_ADNvQ0b3EeyNHPHBnP6rAQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_ADNvREb3EeyNHPHBnP6rAQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_AYXf4Eb3EeyNHPHBnP6rAQ" type="3007" element="_AYTOcEb3EeyNHPHBnP6rAQ">
+              <children xmi:type="notation:Node" xmi:id="_AYXf40b3EeyNHPHBnP6rAQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_AYXf5Eb3EeyNHPHBnP6rAQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_AYXf5Ub3EeyNHPHBnP6rAQ" type="3003" element="_AYT1gEb3EeyNHPHBnP6rAQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_AYXf5kb3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AYXf50b3EeyNHPHBnP6rAQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_AYXf4Ub3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AYXf4kb3EeyNHPHBnP6rAQ" x="38" y="31" width="37" height="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_AvQV9Eb3EeyNHPHBnP6rAQ" type="3007" element="_AvKPQEb3EeyNHPHBnP6rAQ">
+              <children xmi:type="notation:Node" xmi:id="_AvQV90b3EeyNHPHBnP6rAQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_AvQV-Eb3EeyNHPHBnP6rAQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_AvQV-Ub3EeyNHPHBnP6rAQ" type="3003" element="_AvKPQUb3EeyNHPHBnP6rAQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_AvQV-kb3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AvQV-0b3EeyNHPHBnP6rAQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_AvQV9Ub3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AvQV9kb3EeyNHPHBnP6rAQ" x="146" y="49" width="37" height="30"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_ADNvRUb3EeyNHPHBnP6rAQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_ADNvRkb3EeyNHPHBnP6rAQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_ADNvQUb3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ADNvQkb3EeyNHPHBnP6rAQ" x="354" y="270"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_BIII4Eb3EeyNHPHBnP6rAQ" type="2002" element="_BIDQYEb3EeyNHPHBnP6rAQ">
+          <children xmi:type="notation:Node" xmi:id="_BIII40b3EeyNHPHBnP6rAQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_BIII5Eb3EeyNHPHBnP6rAQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_B1_UcEb3EeyNHPHBnP6rAQ" type="3007" element="_B1504Eb3EeyNHPHBnP6rAQ">
+              <children xmi:type="notation:Node" xmi:id="_B1_7gEb3EeyNHPHBnP6rAQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_B1_7gUb3EeyNHPHBnP6rAQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_B1_7gkb3EeyNHPHBnP6rAQ" type="3003" element="_B1504Ub3EeyNHPHBnP6rAQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_B1_7g0b3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B1_7hEb3EeyNHPHBnP6rAQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_B1_UcUb3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B1_Uckb3EeyNHPHBnP6rAQ" x="20" y="49" width="37" height="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_CHLyIkb3EeyNHPHBnP6rAQ" type="3007" element="_CHG5oEb3EeyNHPHBnP6rAQ">
+              <children xmi:type="notation:Node" xmi:id="_CHMZMEb3EeyNHPHBnP6rAQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_CHMZMUb3EeyNHPHBnP6rAQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_CHMZMkb3EeyNHPHBnP6rAQ" type="3003" element="_CHHgsEb3EeyNHPHBnP6rAQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_CHMZM0b3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CHMZNEb3EeyNHPHBnP6rAQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_CHLyI0b3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CHLyJEb3EeyNHPHBnP6rAQ" x="128" y="64" width="37" height="30"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_BIII5Ub3EeyNHPHBnP6rAQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_BIII5kb3EeyNHPHBnP6rAQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_BIII4Ub3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BIII4kb3EeyNHPHBnP6rAQ" x="636" y="282"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_CZPylkb3EeyNHPHBnP6rAQ" type="2002" element="_CZJr4Eb3EeyNHPHBnP6rAQ">
+          <children xmi:type="notation:Node" xmi:id="_CZPymUb3EeyNHPHBnP6rAQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_CZPymkb3EeyNHPHBnP6rAQ" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_CruprEb3EeyNHPHBnP6rAQ" type="3007" element="_CrojAEb3EeyNHPHBnP6rAQ">
+              <children xmi:type="notation:Node" xmi:id="_Crupr0b3EeyNHPHBnP6rAQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_CrupsEb3EeyNHPHBnP6rAQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_CrupsUb3EeyNHPHBnP6rAQ" type="3003" element="_CrojAUb3EeyNHPHBnP6rAQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_Crupskb3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Crups0b3EeyNHPHBnP6rAQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_CruprUb3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Cruprkb3EeyNHPHBnP6rAQ" x="32" y="43" width="37" height="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_DAKokEb3EeyNHPHBnP6rAQ" type="3007" element="_DAFwEEb3EeyNHPHBnP6rAQ">
+              <children xmi:type="notation:Node" xmi:id="_DAKok0b3EeyNHPHBnP6rAQ" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_DAKolEb3EeyNHPHBnP6rAQ" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_DAKolUb3EeyNHPHBnP6rAQ" type="3003" element="_DAFwEUb3EeyNHPHBnP6rAQ">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_DAKolkb3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DAKol0b3EeyNHPHBnP6rAQ"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_DAKokUb3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DAKokkb3EeyNHPHBnP6rAQ" x="116" y="49" width="37" height="30"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_CZPym0b3EeyNHPHBnP6rAQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_CZPynEb3EeyNHPHBnP6rAQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_CZPyl0b3EeyNHPHBnP6rAQ" fontName="Microsoft YaHei UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CZPymEb3EeyNHPHBnP6rAQ" x="480" y="444"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_RkJg8karEey2McNJmMdjRg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_RkoCEUarEey2McNJmMdjRg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_RkoCEkarEey2McNJmMdjRg"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_RkVuMEarEey2McNJmMdjRg" name="Invalid feature as name">
+      <target xmi:type="soaml:Port" href="My.soaml#//@port.0"/>
+      <semanticElements xmi:type="soaml:Port" href="My.soaml#//@port.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_Rkh7cEarEey2McNJmMdjRg" labelSize="12" workspacePath="/SoamlProject/p/port.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_prFSpEbVEeyKxeUB0qdKbA" name="Invalid feature as name">
+      <target xmi:type="soaml:Collaboration" href="My.soaml#//@collaboration.0"/>
+      <semanticElements xmi:type="soaml:Collaboration" href="My.soaml#//@collaboration.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_prLZQEbVEeyKxeUB0qdKbA" labelSize="12" workspacePath="/SoamlProject/p/Collaboration.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_zBExo0bVEeyKxeUB0qdKbA" name="Invalid feature as name">
+      <target xmi:type="soaml:Capability" href="My.soaml#//@capability.0"/>
+      <semanticElements xmi:type="soaml:Capability" href="My.soaml#//@capability.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_zBExpEbVEeyKxeUB0qdKbA" labelSize="12" workspacePath="/SoamlProject/p/capability.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_YjZ9AEb2EeyNHPHBnP6rAQ" name="Invalid feature as name">
+      <target xmi:type="soaml:Participant" href="My.soaml#//@participant.0"/>
+      <semanticElements xmi:type="soaml:Participant" href="My.soaml#//@participant.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_YjakEEb2EeyNHPHBnP6rAQ" labelSize="12" workspacePath="/SoamlProject/p/participant.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_-hv8gEb2EeyNHPHBnP6rAQ" name="Invalid feature as name">
+      <target xmi:type="soaml:Participant" href="My.soaml#//@participant.1"/>
+      <semanticElements xmi:type="soaml:Participant" href="My.soaml#//@participant.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_-hwjkEb2EeyNHPHBnP6rAQ" labelSize="12" workspacePath="/SoamlProject/p/participant.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_-1Cr8Eb2EeyNHPHBnP6rAQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="soaml:Agent" href="My.soaml#//@participant.1/@agent.0"/>
+        <semanticElements xmi:type="soaml:Agent" href="My.soaml#//@participant.1/@agent.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_-1DTAEb2EeyNHPHBnP6rAQ" labelSize="12" labelPosition="node" color="252,175,62">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@subNodeMappings[name='Agent']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@subNodeMappings[name='Agent']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="__IrZoEb2EeyNHPHBnP6rAQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="soaml:Consumer" href="My.soaml#//@participant.1/@consumer.0"/>
+        <semanticElements xmi:type="soaml:Consumer" href="My.soaml#//@participant.1/@consumer.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="__IrZoUb2EeyNHPHBnP6rAQ" labelSize="12" labelPosition="node" color="173,127,168">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@subNodeMappings[name='Consumer']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@subNodeMappings[name='Consumer']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="__mQtgEb2EeyNHPHBnP6rAQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="soaml:Provider" href="My.soaml#//@participant.1/@provider.0"/>
+        <semanticElements xmi:type="soaml:Provider" href="My.soaml#//@participant.1/@provider.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="__mQtgUb2EeyNHPHBnP6rAQ" labelSize="12" labelPosition="node" color="239,41,41">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@subNodeMappings[name='Provider']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Participant']/@subNodeMappings[name='Provider']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_ADJd0Eb3EeyNHPHBnP6rAQ" name="Invalid feature as name">
+      <target xmi:type="soaml:Port" href="My.soaml#//@port.1"/>
+      <semanticElements xmi:type="soaml:Port" href="My.soaml#//@port.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_ADKE4Eb3EeyNHPHBnP6rAQ" labelSize="12" workspacePath="/SoamlProject/p/port.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_AYTOcEb3EeyNHPHBnP6rAQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="soaml:Request" href="My.soaml#//@port.1/@request.0"/>
+        <semanticElements xmi:type="soaml:Request" href="My.soaml#//@port.1/@request.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_AYT1gEb3EeyNHPHBnP6rAQ" labelSize="12" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']/@subNodeMappings[name='Requset']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']/@subNodeMappings[name='Requset']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_AvKPQEb3EeyNHPHBnP6rAQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="soaml:Service" href="My.soaml#//@port.1/@service.0"/>
+        <semanticElements xmi:type="soaml:Service" href="My.soaml#//@port.1/@service.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_AvKPQUb3EeyNHPHBnP6rAQ" labelSize="12" labelPosition="node" color="138,226,52">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']/@subNodeMappings[name='Service']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Port']/@subNodeMappings[name='Service']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_BIDQYEb3EeyNHPHBnP6rAQ" name="Invalid feature as name">
+      <target xmi:type="soaml:Collaboration" href="My.soaml#//@collaboration.1"/>
+      <semanticElements xmi:type="soaml:Collaboration" href="My.soaml#//@collaboration.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_BID3cEb3EeyNHPHBnP6rAQ" labelSize="12" workspacePath="/SoamlProject/p/Collaboration.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_B1504Eb3EeyNHPHBnP6rAQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="soaml:ServiceContract" href="My.soaml#//@collaboration.1/@servicecontract.0"/>
+        <semanticElements xmi:type="soaml:ServiceContract" href="My.soaml#//@collaboration.1/@servicecontract.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_B1504Ub3EeyNHPHBnP6rAQ" labelSize="12" labelPosition="node" color="252,233,79">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']/@subNodeMappings[name='ServiceContract']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']/@subNodeMappings[name='ServiceContract']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_CHG5oEb3EeyNHPHBnP6rAQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="soaml:ServiceArchitecture" href="My.soaml#//@collaboration.1/@servicearchitecture.0"/>
+        <semanticElements xmi:type="soaml:ServiceArchitecture" href="My.soaml#//@collaboration.1/@servicearchitecture.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_CHHgsEb3EeyNHPHBnP6rAQ" labelSize="12" labelPosition="node" color="194,239,255">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']/@subNodeMappings[name='ServiceArchitecture']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Collaboration']/@subNodeMappings[name='ServiceArchitecture']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_CZJr4Eb3EeyNHPHBnP6rAQ" name="Invalid feature as name">
+      <target xmi:type="soaml:Capability" href="My.soaml#//@capability.1"/>
+      <semanticElements xmi:type="soaml:Capability" href="My.soaml#//@capability.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_CZJr4Ub3EeyNHPHBnP6rAQ" labelSize="12" workspacePath="/SoamlProject/p/capability.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_CrojAEb3EeyNHPHBnP6rAQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="soaml:CapabilityExposure" href="My.soaml#//@capability.1/@capabilityexposure.0"/>
+        <semanticElements xmi:type="soaml:CapabilityExposure" href="My.soaml#//@capability.1/@capabilityexposure.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_CrojAUb3EeyNHPHBnP6rAQ" labelSize="12" labelPosition="node" color="238,201,142">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']/@subNodeMappings[name='CapabilityExposure']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']/@subNodeMappings[name='CapabilityExposure']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" uid="_DAFwEEb3EeyNHPHBnP6rAQ" name="Invalid feature as name" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="soaml:CapabilityRealization" href="My.soaml#//@capability.1/@capabilityrealization.0"/>
+        <semanticElements xmi:type="soaml:CapabilityRealization" href="My.soaml#//@capability.1/@capabilityrealization.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_DAFwEUb3EeyNHPHBnP6rAQ" labelSize="12" labelPosition="node" color="209,209,209">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']/@subNodeMappings[name='CapabilityRealization']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer/@containerMappings[name='Capability']/@subNodeMappings[name='CapabilityRealization']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_RjYE4EarEey2McNJmMdjRg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/SoamlProject/My.odesign#//@ownedViewpoints[name='Soaml']/@ownedRepresentations[name='Soaml%20diagram']/@defaultLayer"/>
+    <target xmi:type="soaml:SoaML" href="My.soaml#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

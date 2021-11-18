@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="NUS" version="12.0.0.2017041100">
+  <ownedViewpoints name="NUC">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="NUS" domainClass="uS::US" enablePopupBars="true">
+      <defaultLayer name="Default">
+        <nodeMappings name="Role" domainClass="uS::Role">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/istar.design/images/role.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="Role2US" sourceMapping="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@nodeMappings[name='Role']" targetMapping="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']" targetFinderExpression="aql:self.userstory">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="or" sourceMapping="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']" targetMapping="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']" targetFinderExpression="aql:self.tor" sourceFinderExpression="aql:self.sor" domainClass="userStory::ORrefinement" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Contain" sourceMapping="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']" targetMapping="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="uS::Contain" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="Or" sourceMapping="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']" targetMapping="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="uS::Or" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="And" sourceMapping="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']" targetMapping="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']" targetFinderExpression="aql:self.target" sourceFinderExpression="aql:self.source" domainClass="uS::And" useDomainElement="true">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="UserStory" domainClass="uS::UserStory">
+          <subContainerMappings name="Feature" semanticCandidatesExpression="feature:eAllContents" domainClass="uS::Feature">
+            <subNodeMappings name="Task" semanticCandidatesExpression="feature:eAllContents" domainClass="uS::Task">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/US.design/images/task.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <subNodeMappings name="Goal" semanticCandidatesExpression="feature:eAllContents" domainClass="uS::Goal">
+              <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" labelPosition="node" resizeKind="NSEW" workspacePath="/EARS.design/images/goal.svg">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              </style>
+            </subNodeMappings>
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" workspacePath="/US.design/images/ears1.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subContainerMappings>
+          <subContainerMappings name="Scenario" semanticCandidatesExpression="feature:eAllContents" domainClass="uS::Scenario">
+            <style xsi:type="style:WorkspaceImageDescription" labelSize="12" workspacePath="/US.design/images/ears5.png">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" workspacePath="/istar.design/images/actorbnd.svg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </containerMappings>
+        <toolSections>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Role" nodeMappings="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@nodeMappings[name='Role']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="uS::Role" referenceName="role">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Role'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="UserStory" containerMappings="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="uS::UserStory" referenceName="userstory">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'UserStory'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Feature" containerMappings="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']/@subContainerMappings[name='Feature']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="uS::Feature" referenceName="feature">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Feature'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Goal" nodeMappings="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']/@subContainerMappings[name='Feature']/@subNodeMappings[name='Goal']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="uS::Goal" referenceName="goal">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Goal'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Task" nodeMappings="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']/@subContainerMappings[name='Feature']/@subNodeMappings[name='Task']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="uS::Task" referenceName="task">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Task'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Scenario" containerMappings="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@containerMappings[name='UserStory']/@subContainerMappings[name='Scenario']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="uS::Scenario" referenceName="scenario">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Scenario'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Contain" edgeMappings="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@edgeMappings[name='Contain']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="uS::Refinement" referenceName="refinement" variableName="Refinement"/>
+                <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:Refinement">
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="uS::Contain" referenceName="refinement" variableName="Contain"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:Contain">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="source" valueExpression="var:source"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:Contain">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="target" valueExpression="var:target"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Role2US" edgeMappings="//@ownedViewpoints[name='NUC']/@ownedRepresentations[name='NUS']/@defaultLayer/@edgeMappings[name='Role2US']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="userstory" valueExpression="var:target"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="NUS.design.Services"/>
+  </ownedViewpoints>
+</description:Group>
