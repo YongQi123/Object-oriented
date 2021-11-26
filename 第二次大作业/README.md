@@ -4,5 +4,6 @@
 
 
 ## 时序图
-Object-oriented/第二次大作业/Athlete Registration顺序图.jpg
+(imgs/Athlete Registration顺序图.jpg)
+<img src="/imgs/Athlete Registration顺序图.jpg" alt="Alt text" style="zoom:67%;" />
 ## 包图
