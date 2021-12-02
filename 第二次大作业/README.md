@@ -28,3 +28,12 @@
 ## 包图
 
 >![顺序图](imgs/架构图.png )
+
+
+## 架构设计
+### 过滤器模式（Filter Pattern）
+>![顺序图](imgs/男女过滤模式.png )
+
+### 适配器模式（Adapter Pattern）
+
+>![顺序图](imgs/登记适配器模式.png )
