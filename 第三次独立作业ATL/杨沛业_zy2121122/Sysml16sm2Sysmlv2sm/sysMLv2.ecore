@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sysMLv2" nsURI="http://www.example.org/sysMLv2" nsPrefix="sysMLv2">
+  <eClassifiers xsi:type="ecore:EClass" name="Element">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="identifier" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owningMembership" eType="#//Membership"
+        eOpposite="#//Membership/ownedMemberElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Relationship" eSuperTypes="#//Element"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Namespace" eSuperTypes="#//Element">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMembership" upperBound="-1"
+        eType="#//Membership" containment="true" eOpposite="#//Membership/membershipOwningNamespace"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Membership" eSuperTypes="#//Relationship">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="membershipOwningNamespace"
+        lowerBound="1" eType="#//Namespace" eOpposite="#//Namespace/ownedMembership"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="memberName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedMemberElement" eType="#//Element"
+        containment="true" eOpposite="#//Element/owningMembership"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="memberElement" lowerBound="1"
+        eType="#//Element"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Package" eSuperTypes="#//Namespace"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Definition" eSuperTypes="#//Namespace">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isVariation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedUsage" upperBound="-1"
+        eType="#//Usage" eOpposite="#//Usage/owningDefinition"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="usage" upperBound="-1"
+        eType="#//Usage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="directedUsage" eType="#//Usage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedState" eType="#//StateUsage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Usage" eSuperTypes="#//Namespace">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isVariation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isReference" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="owningDefinition" eType="#//Definition"
+        eOpposite="#//Definition/ownedUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nestedState" eType="#//StateUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nestedTransition" upperBound="-1"
+        eType="#//TransitionUsage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OccurenceDefinition" eSuperTypes="#//Definition"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionDefinition" eSuperTypes="#//OccurenceDefinition #//Behavior"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Behavior"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StateDefinition" eSuperTypes="#//ActionDefinition">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isParallel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entryAction" eType="#//ActionUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="doAction" eType="#//ActionUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="exitAction" eType="#//ActionUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="state" upperBound="-1"
+        eType="#//StateUsage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OcurrenceUsage" eSuperTypes="#//Usage"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ActionUsage" eSuperTypes="#//OcurrenceUsage"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StateUsage" eSuperTypes="#//ActionUsage">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isParallel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entryAction" eType="#//ActionUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="doAction" eType="#//ActionUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="exitAction" eType="#//ActionUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="stateDefinition" lowerBound="1"
+        upperBound="-1" eType="#//Behavior"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransitionUsage" eSuperTypes="#//ActionUsage">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//ActionUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//ActionUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="effect" eType="#//ActionUsage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="triggerAction" upperBound="-1"
+        eType="#//AcceptActionUsage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AcceptActionUsage" eSuperTypes="#//ActionUsage"/>
+</ecore:EPackage>

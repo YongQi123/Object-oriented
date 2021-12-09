@@ -1,0 +1,90 @@
+-- @path Sysml16=/Sysml16sm2Sysmlv2sm/StateMachineModel.ecore
+-- @path Sysmlv2=/Sysml16sm2Sysmlv2sm/sysMLv2.ecore
+
+
+module Sysml16sm2Sysmlv2sm;
+create OUT: Sysmlv2 from IN: Sysml16;
+
+helper context Sysml16!StateMachine def: isParallel(): Boolean =
+	if self.region.size() > 1 then
+		true
+	else
+		false
+	endif;
+
+rule StateMachine2Package {
+	from
+		s: Sysml16!StateMachine
+	to
+		t: Sysmlv2!Package (
+			ownedMembership <- thisModule.StateMachine2Membership(s)
+		)
+}
+
+lazy rule StateMachine2Membership {
+	from
+		s: Sysml16!StateMachine
+	to
+		t: Sysmlv2!Membership (
+			ownedMemberElement <- thisModule.StateMachine2StateUsage(s)
+		)
+}
+
+lazy rule StateMachine2StateUsage {
+	from
+		s: Sysml16!StateMachine
+	to
+		t: Sysmlv2!StateUsage (
+			name <- s.name,
+			isParallel <- s.isParallel(),
+			ownedMembership <- s.region -> collect(e | thisModule.Region2Membership(e))
+		)
+}
+
+lazy rule Region2Membership {
+	from
+		s: Sysml16!Region
+	to
+		t: Sysmlv2!Membership (
+			ownedMemberElement <- thisModule.Region2State(s)
+		)
+}
+
+lazy rule Region2State {
+	from
+		s: Sysml16!Region
+	to
+		t: Sysmlv2!StateUsage (
+			name <- s.name,
+			isParallel <- false,
+			ownedMembership <- s.subvertex -> select(e | e.oclIsTypeOf(Sysml16!State)) ->
+					collect(e | thisModule.State2Membership(e))
+		)
+}
+
+lazy rule State2Membership {
+	from
+		s: Sysml16!State
+	to
+		t: Sysmlv2!Membership (
+			ownedMemberElement <- thisModule.State2StateUsage(s)
+		)
+}
+
+lazy rule State2StateUsage {
+	from
+		s: Sysml16!State
+	to
+		t: Sysmlv2!StateUsage (
+			name <- s.name
+		)
+}
+
+lazy rule Behavior2ActionUsage {
+	from
+		s: Sysml16!Behavior
+	to
+		t: Sysmlv2!ActionUsage (
+			name <- s.name
+		)
+}
