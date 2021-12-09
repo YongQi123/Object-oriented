@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uS:US xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uS="http://www.example.org/uS">
+  <userstory name="a1">
+    <scenario name="Scenario"/>
+    <feature name="Feature">
+      <task name="Task"/>
+      <goal name="Goal"/>
+    </feature>
+  </userstory>
+  <userstory name="b1"/>
+  <userstory name="b2"/>
+  <userstory name="c1"/>
+  <userstory name="c2"/>
+  <userstory name="UserStory">
+    <scenario name="Scenario"/>
+    <feature name="Task">
+      <task name="Task"/>
+      <goal name="Goal"/>
+    </feature>
+  </userstory>
+  <role name="a" userstory="//@userstory.0"/>
+  <role name="c" userstory="//@userstory.3 //@userstory.4"/>
+  <role name="Role"/>
+  <refinement xsi:type="uS:Or" source="//@userstory.0" target="//@userstory.2"/>
+  <refinement xsi:type="uS:Contain" source="//@userstory.0" target="//@userstory.3"/>
+  <refinement xsi:type="uS:Contain" source="//@userstory.0" target="//@userstory.4"/>
+  <refinement xsi:type="uS:Or" source="//@userstory.0" target="//@userstory.1"/>
+</uS:US>

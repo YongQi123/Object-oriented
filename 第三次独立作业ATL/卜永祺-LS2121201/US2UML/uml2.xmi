@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rEMODEL:RequirementModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:rEMODEL="http://www.mydreamy.net/requirementmodel/REMODEL">
+  <UseCaseModel>
+    <uc name="a1"/>
+    <uc name="b1"/>
+    <uc name="b2"/>
+    <uc name="c1"/>
+    <uc name="c2"/>
+    <uc name="UserStory"/>
+    <actor name="a"
+        uc="//@UseCaseModel/@uc.0"/>
+    <actor name="c"
+        uc="//@UseCaseModel/@uc.3 //@UseCaseModel/@uc.4"/>
+  </UseCaseModel>
+  <DomainModel/>
+</rEMODEL:RequirementModel>
