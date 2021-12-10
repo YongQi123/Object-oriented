@@ -1,0 +1,16 @@
+module Soaml2Uml;
+-- @path Soaml=/Soaml2Uml/Soaml.ecore
+-- @path Uml=/Soaml2Uml/Uml.ecore
+create OUT: Uml from IN: Soaml;
+
+rule Provider2Operation{
+	from 
+			s: Soaml!Provider
+	to 
+			t: Uml!Operation (
+				content <- s.provider_name.substring(1,8),
+				name <- 'the section of ' + s.participant_provider.participant_name  
+			
+			)
+}
+
