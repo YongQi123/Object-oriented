@@ -1,0 +1,116 @@
+module DomainModel2Organization;
+-- @path DomainModel=/DomainModel2Organization/DomainModel.ecore
+-- @path Organization=/DomainModel2Organization/Organization.ecore
+create OUT: Organization from IN: DomainModel;
+
+helper context DomainModel!Entity def: isAdministerDepartment(): Boolean =
+	if not self.composition.oclIsUndefined() then
+		true
+	else
+		if not self.aggregation.oclIsUndefined() then
+			true
+		else
+			false
+		endif
+	endif;
+
+helper context DomainModel!Entity def: isTechniqueDepartment(): Boolean =
+	if not self.reference.oclIsUndefined() then
+		true
+	else
+		false
+	endif;
+
+helper context DomainModel!Entity def: isFinanceDepartment(): Boolean =
+	if not self.entityOpposite.oclIsUndefined() then
+		true
+	else
+		false
+	endif;
+
+helper context DomainModel!Entity def: isStaffDepartment(): Boolean =
+	if not self.superentity.oclIsUndefined() then
+		true
+	else
+		false
+	endif;
+
+helper context DomainModel!Entity def: name: String =
+	if not self.composition.oclIsUndefined() then
+		self.name
+	else
+		if not self.aggregation.oclIsUndefined() then
+			self.name
+		else
+			if not self.reference.oclIsUndefined() then
+				self.name
+			else
+				if not self.entityOpposite.oclIsUndefined() then
+					self.name
+				else
+						self.name
+				endif
+			endif
+		endif
+	endif;
+
+helper context DomainModel!Entity def: description: String =
+	if not self.composition.oclIsUndefined() then
+		self.description
+	else
+		if not self.aggregation.oclIsUndefined() then
+			self.description
+		else
+			if not self.reference.oclIsUndefined() then
+				self.description
+			else
+				if not self.entityOpposite.oclIsUndefined() then
+					self.description
+				else
+						self.description
+				endif
+			endif
+		endif
+	endif;
+
+helper context DomainModel!Entity def: information: String =
+	if not self.composition.oclIsUndefined() then
+		self.attribute.information
+	else
+		if not self.aggregation.oclIsUndefined() then
+			self.attribute.information
+		else
+			if not self.reference.oclIsUndefined() then
+				self.attribute.information
+			else
+				if not self.entityOpposite.oclIsUndefined() then
+					self.attribute.information
+				else
+						self.attribute.information
+				endif
+			endif
+		endif
+	endif;
+
+rule Entity2AdministerDepartment {
+	from
+		s: DomainModel!Entity (s.isAdministerDepartment())
+	to
+		t: Organization!AdministerDepartment (
+			name <- s.name,
+			description <- s.description,
+			information <- s.information
+		)
+}
+
+
+rule Entity2StaffDepartment {
+	from
+		s: DomainModel!Entity (s.isStaffDepartment())
+	to
+		t: Organization!StaffDepartment (
+			name <- s.name,
+			description <- s.description,
+			information <- s.information
+		)
+}
