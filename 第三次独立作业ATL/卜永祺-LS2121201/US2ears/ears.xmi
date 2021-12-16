@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:eARS="http://www.example.org/eARS">
+  <eARS:EARS>
+    <ub Name="a1">
+      <the Name="a"/>
+      <shall
+          Name="Feature"/>
+    </ub>
+    <ub Name="b1">
+      <the Name="b"/>
+    </ub>
+    <ub Name="b2">
+      <the Name="b"/>
+    </ub>
+    <ub Name="c1"/>
+    <ub Name="c2"/>
+    <ub Name="UserStory">
+      <the Name="Role"/>
+      <shall
+          Name="Task"/>
+    </ub>
+  </eARS:EARS>
+  <eARS:System
+      Name="c"/>
+  <eARS:System
+      Name="Role"/>
+  <eARS:System
+      Name="c"/>
+  <eARS:System
+      Name="Role"/>
+  <eARS:System
+      Name="c"/>
+  <eARS:System
+      Name="Role"/>
+  <eARS:System
+      Name="c"/>
+  <eARS:System
+      Name="Role"/>
+  <eARS:System
+      Name="c"/>
+  <eARS:System
+      Name="Role"/>
+  <eARS:System
+      Name="c"/>
+  <eARS:System
+      Name="Role"/>
+</xmi:XMI>

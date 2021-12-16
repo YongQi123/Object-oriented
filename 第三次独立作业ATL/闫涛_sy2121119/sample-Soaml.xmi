@@ -3,5 +3,18 @@
 		<Participant participant_name="Manufacturer">
 				<provider provider_name="Ordering-Taker"/>
 				<provider provider_name="Shipping-Provider"/>
+				<consumer consumer_name="Ordering-Placer"/>
 		</Participant>	
+		<Port port_name="port_example">
+				<service service_name="deal_with_order"/>
+				<request request_name="request_order"/>
+		</Port>
+		<Collaboration collaboration_name="collaboration_example">
+				<servicecontract servicecontract_name="purchasing_service"/>
+				<servicearchitecture servicearchitecture_name="dealer_network_architecture"/>
+		</Collaboration>
+		<Capability capability_name="order_processing">
+				<capabilityexposure capabilityexposure_name="shipping_interface"/>
+				<capabilityrealization capabilityrealization_name="shipping"/>
+		</Capability>
 </xmi:XMI>

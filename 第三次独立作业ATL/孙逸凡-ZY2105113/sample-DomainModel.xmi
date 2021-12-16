@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="DomainModel">
-	<Entity name="CEO">
-		<composition name="designer"/>
-	</Entity>
+	<DomainModel name="Company">
+		<entity name="CEO1" description="biggerCEO">
+			<composition name="aaa"/>
+		</entity>
+		<entity name="CEO2" description="smallerCEO">
+			<aggregation name="bbb"/>
+		</entity>
+		<entity name="Producer" description="creater">
+			<reference name="ccc"/>
+		</entity>
+		<entity name="Cashier" description="consume">
+			<entityOpposite name="ddd"/>
+		</entity>
+		<entity name="Staff" description="tinyStaff">
+			<superentity name="eee"/>
+		</entity>
+	</DomainModel>
 </xmi:XMI>

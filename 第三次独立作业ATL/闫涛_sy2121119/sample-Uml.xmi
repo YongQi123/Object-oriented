@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="Uml">
-  <Operation name="the section of Manufacturer" content="Ordering"/>
-  <Operation name="the section of Manufacturer" content="Shipping"/>
+  <Operation name="the operation of Manufacturer" content="Ordering"/>
+  <Operation name="the operation of Manufacturer" content="Shipping"/>
+  <Operation name="the operation of Manufacturer" content="Ordering"/>
+  <BehavioredClassifier name="the port of port_example" content="deal_with_order"/>
+  <BehavioredClassifier name="the port of port_example" content="request_order"/>
+  <StructedClassifier name="the c of collaboration_example" content="purchasing_service"/>
+  <StructedClassifier name="the col of collaboration_example" content="dealer_network_architecture"/>
+  <Classifier name="the cap of order_processing" content="shipping_interface"/>
+  <Classifier name="the cap of order_processing" content="shipping"/>
 </xmi:XMI>

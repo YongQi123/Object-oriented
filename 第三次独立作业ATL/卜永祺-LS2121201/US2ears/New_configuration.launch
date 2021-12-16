@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.m2m.atl.adt.launching.atlTransformation">
-    <stringAttribute key="ATL File Name" value="/US2UML/us2uml.atl"/>
+    <stringAttribute key="ATL File Name" value="/US2ears/US2ears.atl"/>
     <stringAttribute key="ATL VM" value="EMF-specific VM"/>
     <stringAttribute key="ATL_COMPILER" value="atl2006"/>
     <booleanAttribute key="IS_REFINING" value="false"/>
@@ -9,13 +9,13 @@
     </mapAttribute>
     <mapAttribute key="Libs"/>
     <mapAttribute key="Model Handler">
-        <mapEntry key="RE" value="EMF"/>
+        <mapEntry key="EA" value="EMF"/>
         <mapEntry key="US" value="EMF"/>
     </mapAttribute>
     <mapAttribute key="ModelType">
+        <mapEntry key="EA" value="METAMODELOUTPUT"/>
         <mapEntry key="IN" value="MODELINPUT"/>
         <mapEntry key="OUT" value="MODELOUTPUT"/>
-        <mapEntry key="RE" value="METAMODELOUTPUT"/>
         <mapEntry key="US" value="METAMODELINPUT"/>
     </mapAttribute>
     <mapAttribute key="Options">
@@ -34,13 +34,13 @@
         <listEntry value="OUT"/>
     </listAttribute>
     <mapAttribute key="Output">
-        <mapEntry key="OUT" value="RE"/>
+        <mapEntry key="OUT" value="EA"/>
     </mapAttribute>
     <mapAttribute key="Path">
+        <mapEntry key="EA" value="/US2ears/eARS.ecore"/>
         <mapEntry key="IN" value="/US2UML/US.xmi"/>
-        <mapEntry key="OUT" value="/US2UML/uml2.xmi"/>
-        <mapEntry key="RE" value="uri:http://www.mydreamy.net/requirementmodel/REMODEL"/>
-        <mapEntry key="US" value="/US2UML/uS.ecore"/>
+        <mapEntry key="OUT" value="/US2ears/ears.xmi"/>
+        <mapEntry key="US" value="/US2ears/uS.ecore"/>
     </mapAttribute>
     <listAttribute key="Superimpose"/>
 </launchConfiguration>

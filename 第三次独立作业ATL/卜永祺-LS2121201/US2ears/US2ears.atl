@@ -1,0 +1,42 @@
+module US2ears;
+--@path newIstar=/us2uml/uS.ecore
+--@path REMODEL=/us2uml/REMODEL.ecore
+create OUT : EA from IN : US;
+
+rule us2ears {
+	from
+		us : US!US
+	to 
+		ea : EA!EARS(
+			
+			ub <- us.userstory ->collect(e | thisModule.UserStory2Ubiquitous(e))
+			
+		)
+}
+lazy rule UserStory2Ubiquitous {
+	from
+		u : US!UserStory
+	to 
+		ea : EA!Ubiquitous (
+			Name <- u.name,
+			the <- US!Role.allInstances() ->collect(e | thisModule.Role2System(e)),
+			shall <- u.feature ->collect(e | thisModule.Feature2Response(e))
+		)
+}
+lazy rule Feature2Response{
+	from
+		u : US!Feature
+	to 
+		ea : EA!Response (
+			Name <- u.name
+		)
+}
+
+lazy rule Role2System {
+	from
+		u : US!Role
+	to 
+		ea : EA!System (
+			Name <- u.name
+		)
+}

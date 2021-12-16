@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="eARS" nsURI="http://www.example.org/eARS" nsPrefix="eARS">
+  <eClassifiers xsi:type="ecore:EClass" name="EARS">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ub" upperBound="-1" eType="#//Ubiquitous"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ubiquitous">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="the" eType="#//System"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shall" eType="#//Response"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Response">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EventDriven" eSuperTypes="#//Ubiquitous">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="when" eType="#//Preconditions"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Preconditions">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="UnwantedBehaviour" eSuperTypes="#//Ubiquitous">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="if" eType="#//Preconditions"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StateDriven" eSuperTypes="#//Ubiquitous">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="while" eType="#//State"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="State">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OptionalFeatures" eSuperTypes="#//Ubiquitous">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="where" eType="#//FeatureIs"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FeatureIs">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Complex" eSuperTypes="#//Ubiquitous">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ifthen" eType="#//Preconditions"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="while" eType="#//State"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="where" eType="#//FeatureIs"
+        containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

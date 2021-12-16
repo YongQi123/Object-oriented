@@ -9,7 +9,84 @@ rule Provider2Operation{
 	to 
 			t: Uml!Operation (
 				content <- s.provider_name.substring(1,8),
-				name <- 'the section of ' + s.participant_provider.participant_name  
+				name <- 'the operation of ' + s.participant_provider.participant_name  
+			
+			)
+}
+
+rule Consumer2Operation{
+	from 
+			s: Soaml!Consumer
+	to 
+			t: Uml!Operation (
+				content <- s.consumer_name.substring(1,8),
+				name <- 'the operation of ' + s.participant_consumer.participant_name  
+			
+			)
+}
+
+rule Service2BehavioredClassifier{
+	from 
+			s: Soaml!Service
+	to 
+			t: Uml!BehavioredClassifier (
+				content <- s.service_name,
+				name <- 'the port of ' + s.port_service.port_name  
+			
+			)
+}
+
+rule Request2BehavioredClassifier{
+	from 
+			s: Soaml!Request
+	to 
+			t: Uml!BehavioredClassifier (
+				content <- s.request_name,
+				name <- 'the port of ' + s.port_request.port_name  
+			
+			)
+}
+
+rule ServiceContract2StructedClassifier{
+	from 
+			s: Soaml!ServiceContract
+	to 
+			t: Uml!StructedClassifier (
+				content <- s.servicecontract_name,
+				name <- 'the c of ' + s.collaboration_servicecontract.collaboration_name  
+			
+			)
+}
+
+rule ServiceArchitecture2StructedClassifier{
+	from 
+			s: Soaml!ServiceArchitecture
+	to 
+			t: Uml!StructedClassifier (
+				content <- s.servicearchitecture_name,
+				name <- 'the col of ' + s.collaboration_servicearchitecture.collaboration_name  
+			
+			)
+}
+
+rule CapabilityExposure2Classifier{
+	from 
+			s: Soaml!CapabilityExposure
+	to 
+			t: Uml!Classifier (
+				content <- s.capabilityexposure_name,
+				name <- 'the cap of ' + s.capability_capabilityexposure.capability_name  
+			
+			)
+}
+
+rule CapabilityRealization2Classifier{
+	from 
+			s: Soaml!CapabilityRealization
+	to 
+			t: Uml!Classifier (
+				content <- s.capabilityrealization_name,
+				name <- 'the cap of ' + s.capability_capabilityrealization.capability_name  
 			
 			)
 }
