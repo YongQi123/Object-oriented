@@ -12,79 +12,77 @@ helper context Sysml16!StateMachine def: isParallel(): Boolean =
 		false
 	endif;
 
-rule StateMachine2Package {
-	from
-		s: Sysml16!StateMachine
-	to
-		t: Sysmlv2!Package (
-			ownedMembership <- thisModule.StateMachine2Membership(s)
-		)
-}
+helper context Sysml16!State def: isParallel(): Boolean =
+	if self.region.size() > 1 then
+		true
+	else
+		false
+	endif;
 
-lazy rule StateMachine2Membership {
-	from
-		s: Sysml16!StateMachine
-	to
-		t: Sysmlv2!Membership (
-			ownedMemberElement <- thisModule.StateMachine2StateUsage(s)
-		)
-}
+helper def: println(enu: OclAny): OclAny =
+	enu.debug();
 
-lazy rule StateMachine2StateUsage {
+rule StateMachineRule {
 	from
 		s: Sysml16!StateMachine
 	to
-		t: Sysmlv2!StateUsage (
+		p: Sysmlv2!Package (
+			ownedMembership <- m
+		),
+		m: Sysmlv2!Membership (
+			ownedMemberElement <- state
+		),
+		state: Sysmlv2!StateUsage (
 			name <- s.name,
 			isParallel <- s.isParallel(),
-			ownedMembership <- s.region -> collect(e | thisModule.Region2Membership(e))
+			ownedMembership <- s.region -> collect(e | thisModule.resolveTemp(e, 'm'))
 		)
+	do {
+		thisModule.println(thisModule.resolveTemp(s.region.first(), 't')); 
+		thisModule.println(state.ownedMembership); 
+	}
 }
 
-lazy rule Region2Membership {
+rule RegionRule {
 	from
 		s: Sysml16!Region
 	to
-		t: Sysmlv2!Membership (
-			ownedMemberElement <- thisModule.Region2State(s)
-		)
-}
-
-lazy rule Region2State {
-	from
-		s: Sysml16!Region
-	to
+		m: Sysmlv2!Membership (
+			ownedMemberElement <- t
+		),
 		t: Sysmlv2!StateUsage (
 			name <- s.name,
 			isParallel <- false,
 			ownedMembership <- s.subvertex -> select(e | e.oclIsTypeOf(Sysml16!State)) ->
-					collect(e | thisModule.State2Membership(e))
+					collect(e | thisModule.resolveTemp(e, 'm')),
+			ownedMembership <- s.transition -> collect(e | thisModule.resolveTemp(e, 'm'))
 		)
 }
 
-lazy rule State2Membership {
+rule TransitionRule {
 	from
-		s: Sysml16!State
+		s: Sysml16!Transition
 	to
-		t: Sysmlv2!Membership (
-			ownedMemberElement <- thisModule.State2StateUsage(s)
+		m: Sysmlv2!Membership (
+			ownedMemberElement <- t
+		),
+		t: Sysmlv2!TransitionUsage (
+			name <- s.name,
+			target <- thisModule.resolveTemp(s.target, 't'),
+			source <- thisModule.resolveTemp(s.source, 't')
 		)
 }
 
-lazy rule State2StateUsage {
+rule StateRule {
 	from
 		s: Sysml16!State
 	to
+		m: Sysmlv2!Membership (
+			ownedMemberElement <- t
+		),
 		t: Sysmlv2!StateUsage (
-			name <- s.name
-		)
-}
-
-lazy rule Behavior2ActionUsage {
-	from
-		s: Sysml16!Behavior
-	to
-		t: Sysmlv2!ActionUsage (
-			name <- s.name
+			name <- s.name,
+			isParallel <- s.isParallel(),
+			ownedMembership <- s.region -> collect(e | thisModule.resolveTemp(e, 'm'))
 		)
 }

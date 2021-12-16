@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sysMLv2="http://www.example.org/sysMLv2">
+  <sysMLv2:Package>
+    <ownedMembership>
+      <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="StateMachine" isParallel="true">
+        <ownedMembership>
+          <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="Region">
+            <ownedMembership>
+              <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="state1"/>
+            </ownedMembership>
+            <ownedMembership>
+              <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="state2"/>
+            </ownedMembership>
+            <ownedMembership>
+              <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="state"/>
+            </ownedMembership>
+            <ownedMembership>
+              <ownedMemberElement xsi:type="sysMLv2:TransitionUsage" target="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement"/>
+            </ownedMembership>
+            <ownedMembership>
+              <ownedMemberElement xsi:type="sysMLv2:TransitionUsage" source="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement" target="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.1/@ownedMemberElement"/>
+            </ownedMembership>
+            <ownedMembership>
+              <ownedMemberElement xsi:type="sysMLv2:TransitionUsage" source="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.1/@ownedMemberElement" target="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.2/@ownedMemberElement"/>
+            </ownedMembership>
+            <ownedMembership>
+              <ownedMemberElement xsi:type="sysMLv2:TransitionUsage" source="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.2/@ownedMemberElement" target="/1/@ownedMemberElement"/>
+            </ownedMembership>
+          </ownedMemberElement>
+        </ownedMembership>
+        <ownedMembership>
+          <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="Region">
+            <ownedMembership>
+              <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="state123" isParallel="true">
+                <ownedMembership>
+                  <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="Region">
+                    <ownedMembership>
+                      <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="state"/>
+                    </ownedMembership>
+                    <ownedMembership>
+                      <ownedMemberElement xsi:type="sysMLv2:TransitionUsage" target="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.1/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement"/>
+                    </ownedMembership>
+                    <ownedMembership>
+                      <ownedMemberElement xsi:type="sysMLv2:TransitionUsage" source="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.1/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement" target="/2/@ownedMemberElement"/>
+                    </ownedMembership>
+                  </ownedMemberElement>
+                </ownedMembership>
+                <ownedMembership>
+                  <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="Region">
+                    <ownedMembership>
+                      <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="state"/>
+                    </ownedMembership>
+                    <ownedMembership>
+                      <ownedMemberElement xsi:type="sysMLv2:TransitionUsage" target="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.1/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.1/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement"/>
+                    </ownedMembership>
+                    <ownedMembership>
+                      <ownedMemberElement xsi:type="sysMLv2:TransitionUsage" source="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.1/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement/@ownedMembership.1/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement" target="/3/@ownedMemberElement"/>
+                    </ownedMembership>
+                  </ownedMemberElement>
+                </ownedMembership>
+              </ownedMemberElement>
+            </ownedMembership>
+            <ownedMembership>
+              <ownedMemberElement xsi:type="sysMLv2:TransitionUsage" target="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.1/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement"/>
+            </ownedMembership>
+            <ownedMembership>
+              <ownedMemberElement xsi:type="sysMLv2:TransitionUsage" source="/0/@ownedMembership.0/@ownedMemberElement/@ownedMembership.1/@ownedMemberElement/@ownedMembership.0/@ownedMemberElement" target="/4/@ownedMemberElement"/>
+            </ownedMembership>
+          </ownedMemberElement>
+        </ownedMembership>
+      </ownedMemberElement>
+    </ownedMembership>
+  </sysMLv2:Package>
+  <sysMLv2:Membership>
+    <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="final"/>
+  </sysMLv2:Membership>
+  <sysMLv2:Membership>
+    <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="final"/>
+  </sysMLv2:Membership>
+  <sysMLv2:Membership>
+    <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="final"/>
+  </sysMLv2:Membership>
+  <sysMLv2:Membership>
+    <ownedMemberElement xsi:type="sysMLv2:StateUsage" name="final"/>
+  </sysMLv2:Membership>
+</xmi:XMI>
